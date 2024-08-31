@@ -2,3 +2,4 @@ site_name: Money Waffle
 theme: terminal
 plugins:
   - md-to-html
+copyright: Copyright 2024 MoneyWaffle.com, All rights reserved. Please contact moneywaffle@moneywaffle.com for any suggestions and feedbacks.
