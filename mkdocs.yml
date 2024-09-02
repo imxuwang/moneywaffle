@@ -1,5 +1,12 @@
 site_name: Money Waffle
-theme: terminal
+theme:
+  name: terminal
+  font:
+    # text: Lora
+    text: 'Noto Serif'
+    code: Mulish
 plugins:
   - md-to-html
+  - search
+
 copyright: Copyright 2024 MoneyWaffle.com. All rights reserved.
