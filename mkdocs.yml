@@ -16,9 +16,14 @@ extra_javascript:
   - https://code.highcharts.com/modules/exporting.js
   - https://code.highcharts.com/modules/export-data.js
   - https://code.highcharts.com/modules/accessibility.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - scripts/default.js
   - scripts/load_scripts.js
 
 extra_css:
   - css/highcharts.css
 
-copyright: Copyright 2024 MoneyWaffle.com. All rights reserved.
+markdown_extensions:
+    - mdx_math
+
+copyright: Copyright 2024 MoneyWaffle.com. All rights reserved. Please <a href="mailto:support@moneywaffle.com">contact us</a> for more information.

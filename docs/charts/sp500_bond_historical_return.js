@@ -4,7 +4,7 @@ export function sp500_bond_historical_return(container, years, sp500, bond) {
             type: 'column'
         },
         title: {
-            text: 'S&P 500 and bond annual return'
+            text: 'S&P 500 and US T.Bond (10 years) annual return (dividend/interest reinvested)'
         },
         xAxis: {
             categories: years
@@ -23,10 +23,10 @@ export function sp500_bond_historical_return(container, years, sp500, bond) {
             }
         },
         series: [{
-            name: 'S&P 500',
+            name: 'S&P500',
             data: sp500 
         }, {
-            name: 'Bond',
+            name: 'T.Bond',
             data: bond,
             color: 'red'
         }],
