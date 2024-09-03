@@ -1,15 +1,17 @@
 site_name: Money Waffle
 theme:
-  name: terminal
-  font:
+  # name: terminal
+  name: cinder
+  # font:
     # text: Lora
-    text: 'Noto Serif'
-    code: Mulish
+    # text: 'Noto Serif'
+    # code: Mulish
 plugins:
-  - md-to-html
+  # - md-to-html
   - search
 
 extra_javascript:
+  - https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
   - https://code.highcharts.com/highcharts.js
   - https://code.highcharts.com/modules/exporting.js
   - https://code.highcharts.com/modules/export-data.js

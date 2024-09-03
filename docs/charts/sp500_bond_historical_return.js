@@ -1,4 +1,4 @@
-export function sp500_bond_historical_return(container) {
+export function sp500_bond_historical_return(container, years, sp500, bond) {
     Highcharts.chart(container, {
         chart: {
             type: 'column'
@@ -7,7 +7,7 @@ export function sp500_bond_historical_return(container) {
             text: 'S&P 500 and bond annual return'
         },
         xAxis: {
-            categories: ['2015', '2016', '2017', '2018', '2019']
+            categories: years
         },
         yAxis: {
             title: {
@@ -24,10 +24,14 @@ export function sp500_bond_historical_return(container) {
         },
         series: [{
             name: 'S&P 500',
-            data: [1.38, 11.96, 21.83, -4.38, 31.49]
+            data: sp500 
         }, {
             name: 'Bond',
-            data: [0.55, 0.46, 0.71, 0.01, 0.09]
-        }]
+            data: bond,
+            color: 'red'
+        }],
+        exporting: {
+            enabled: false
+        }
     });
 }
