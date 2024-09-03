@@ -1,5 +1,7 @@
 # Asset Allocation Comparison
 
+**Last updated: 2024-09-03**
+
 ## Goal
 
 The primary objective is to backtest various asset allocations between stocks and bonds to identify optimized allocations across different periods, with a specific focus on how expenses impact investment returns.
