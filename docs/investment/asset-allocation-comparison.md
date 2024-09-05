@@ -81,18 +81,30 @@ Three periods are tested:
     - This timeframe encompasses a significant depression followed by the longest bull market in history.
     - It serves as a test of the balance between risk and growth.
 
-##### Random Periods
+#### Random Periods
 
-Random periods 
+Three different period lengths—10, 15, and 20 years—are tested, with 100 random samples taken for each.
+The samples are drawn from historical returns spanning from 1935 to 2023, inclusive.
 
+### Metrics
 
+The following metrics are used:
 
+- Annualized return
+- Standard deviation of yearly return (risk)
+- Annualized return per unit of risk
+- Maximum drawdown
+- Maximum drawdown duration
+- Minimum asset value
+
+In tests involving expenses, the total actual expense is used as an indicator of living conditions.
 
 ## Performance Without Expense
 
 Initial asset value does not matter.
 
 Can draw a radar chart of each allocation.
+Also draw the efficient frontier curve.
 
 
 ## Performance With Expense
