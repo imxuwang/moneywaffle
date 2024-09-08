@@ -57,7 +57,7 @@ Let
 
 The actual expense is calculated as:
 
- \[E_{a}^i = \max\left\{E_{f}^i \times \theta, \min\left\{E_{f}^i, V^i_s \times 4\%\right\}\right\}\]
+ \[E_{a}^i = \min\left\{E_{f}^i, \max\left\{E_{f}^i \times \theta, V^i_s \times 4\%\right\}\right\}\]
 
 This formula ensures that expenses remain within a sustainable range, balancing between maintaining quality of life and preserving assets during market fluctuations.
 
