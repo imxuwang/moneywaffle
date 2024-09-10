@@ -1,4 +1,4 @@
-export function sp500_bond_historical_return(container, years, sp500, bond) {
+export function sp500BondHistoricalReturn(container, years, sp500, bond) {
     Highcharts.chart(container, {
         chart: {
             type: 'column'
