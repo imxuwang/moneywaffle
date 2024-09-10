@@ -101,13 +101,9 @@ In tests involving expenses, the total actual expense is used as an indicator of
 
 ## Performance Without Expense
 
-Initial asset value does not matter.
+### Sequential Periods
 
-Can draw a radar chart of each allocation.
-Also draw the efficient frontier curve.
-
-
-### 1935 to 2023
+#### 1935 to 2023
 
 |Ratio|Return|Risk|Return/Risk|Max Drawdown|Max Drawdown Dration|Min Net Asset|
 |---|---|---|---|---|---|---|
@@ -122,7 +118,7 @@ Also draw the efficient frontier curve.
 
 <div id="asset-allocation-risk-return-frontier-1935-2023-container"></div>
 
-### 2000 to 2015
+#### 2000 to 2015
 
 |Ratio|Return|Risk|Return/Risk|Max Drawdown|Max Drawdown Dration|Min Net Asset|
 |---|---|---|---|---|---|---|
@@ -137,7 +133,7 @@ Also draw the efficient frontier curve.
 
 <div id="asset-allocation-risk-return-frontier-2000-2015-container"></div>
 
-### 2000 to 2023
+#### 2000 to 2023
 
 |Ratio|Return|Risk|Return/Risk|Max Drawdown|Max Drawdown Dration|Min Net Asset|
 |---|---|---|---|---|---|---|
