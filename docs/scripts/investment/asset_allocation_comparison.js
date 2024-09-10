@@ -30,7 +30,7 @@ $.getJSON(
     ASSET_ALLOCATION_NET_ASSET_GROWTH_SEQUENTIAL_PERIODS.forEach((period) => {
       const periodData = data[`${period[0]} - ${period[1]}`];
       assetGrowthChart(
-        `asset-allocation-net-asset-growth-${period[0]}-${period[1]}-container`,
+        `asset-allocation-net-asset-growth-${period[0]}-${period[1]}-no-expense-container`,
         periodData
           .filter((item) => {
             return DISPLAY_EQUITY_ALLOCATIONS.includes(item.ratio);
@@ -44,7 +44,41 @@ $.getJSON(
       );
 
       riskReturnFrontierChart(
-        `asset-allocation-risk-return-frontier-${period[0]}-${period[1]}-container`,
+        `asset-allocation-risk-return-frontier-${period[0]}-${period[1]}-no-expense-container`,
+        periodData.map((item) => {
+          return {
+            risk: item.metrics.risk,
+            return: item.metrics.return,
+            return_per_risk: item.metrics.return_per_risk,
+            equity: `${item.ratio}%`,
+          };
+        })
+      );
+    });
+  }
+);
+
+$.getJSON(
+  "/data/asset_allocation_comparison_sequential_with_expense.json",
+  function (data) {
+    ASSET_ALLOCATION_NET_ASSET_GROWTH_SEQUENTIAL_PERIODS.forEach((period) => {
+      const periodData = data[`${period[0]} - ${period[1]}`];
+      assetGrowthChart(
+        `asset-allocation-net-asset-growth-${period[0]}-${period[1]}-with-expense-container`,
+        periodData
+          .filter((item) => {
+            return DISPLAY_EQUITY_ALLOCATIONS.includes(item.ratio);
+          })
+          .map((item) => {
+            return {
+              equity: `${item.ratio}%`,
+              asset: item.asset.map((value) => value / 1000),
+            };
+          })
+      );
+
+      riskReturnFrontierChart(
+        `asset-allocation-risk-return-frontier-${period[0]}-${period[1]}-with-expense-container`,
         periodData.map((item) => {
           return {
             risk: item.metrics.risk,
