@@ -1,16 +1,18 @@
 import { sp500BondHistoricalReturn } from "./sp500_bond_historical_return_chart.js";
 import {
   assetGrowthChart,
+  distributionChart,
   riskReturnFrontierChart,
 } from "./asset_allocation_chart.js";
 
 const SP500_BOND_HISTORICAL_RETURN_CONTAINER =
   "sp500-bond-historical-return-container";
-const ASSET_ALLOCATION_NET_ASSET_GROWTH_SEQUENTIAL_PERIODS = [
+const ASSET_ALLOCATION_SEQUENTIAL_PERIODS = [
   [1935, 2023],
   [2000, 2015],
   [2000, 2023],
 ];
+const ASSET_ALLOCATION_RANDOM_PERIODS = [10, 15, 20, 30, 40];
 const DISPLAY_EQUITY_ALLOCATIONS = [0, 20, 40, 60, 80, 100];
 
 $.getJSON("/data/sp500_bond_historical_return.json", function (data) {
@@ -27,7 +29,7 @@ $.getJSON("/data/sp500_bond_historical_return.json", function (data) {
 $.getJSON(
   "/data/asset_allocation_comparison_sequential_no_expense.json",
   function (data) {
-    ASSET_ALLOCATION_NET_ASSET_GROWTH_SEQUENTIAL_PERIODS.forEach((period) => {
+    ASSET_ALLOCATION_SEQUENTIAL_PERIODS.forEach((period) => {
       const periodData = data[`${period[0]} - ${period[1]}`];
       assetGrowthChart(
         `asset-allocation-net-asset-growth-${period[0]}-${period[1]}-no-expense-container`,
@@ -61,7 +63,7 @@ $.getJSON(
 $.getJSON(
   "/data/asset_allocation_comparison_sequential_with_expense.json",
   function (data) {
-    ASSET_ALLOCATION_NET_ASSET_GROWTH_SEQUENTIAL_PERIODS.forEach((period) => {
+    ASSET_ALLOCATION_SEQUENTIAL_PERIODS.forEach((period) => {
       const periodData = data[`${period[0]} - ${period[1]}`];
       assetGrowthChart(
         `asset-allocation-net-asset-growth-${period[0]}-${period[1]}-with-expense-container`,
@@ -89,5 +91,34 @@ $.getJSON(
         })
       );
     });
+  }
+);
+
+$.getJSON(
+  '/data/asset_allocation_comparison_random_no_expense.json',
+  function (data) {
+    ASSET_ALLOCATION_RANDOM_PERIODS.forEach((period) => {
+      const periodData = data[period];
+      distributionChart(
+      `asset-allocation-return-random-${period}-years-no-expense-container`,
+      periodData.filter((item) => {
+        return DISPLAY_EQUITY_ALLOCATIONS.includes(item.ratio);
+      }).map((item) => {
+        return {
+          equity: `${item.ratio}%`,
+          value: item.returns,
+        };
+      }), `Annualized return of random ${period} Years`);
+      distributionChart(
+      `asset-allocation-risk-random-${period}-years-no-expense-container`,
+      periodData.filter((item) => {
+        return DISPLAY_EQUITY_ALLOCATIONS.includes(item.ratio);
+      }).map((item) => {
+        return {
+          equity: `${item.ratio}%`,
+          value: item.risks,
+        };
+      }), `Risk of random ${period} Years`);
+  })
   }
 );
