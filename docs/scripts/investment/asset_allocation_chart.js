@@ -1,3 +1,9 @@
+import {
+  calculateBoxplotData,
+  calculateOutliers,
+  generateColors,
+} from "../utils.js";
+
 // series is a list of dicts {'equity': 'X%', 'asset': []}
 export function assetGrowthChart(container, series) {
   Highcharts.chart(container, {
@@ -79,7 +85,7 @@ export function riskReturnFrontierChart(container, series) {
           return {
             x: s["risk"] * 100,
             y: s["return"] * 100,
-            marker: {radius: 5, fillcolor: "white"},
+            marker: { radius: 5, fillcolor: "white" },
             equity: s["equity"],
             return_per_risk: s["return_per_risk"],
           };
@@ -99,5 +105,49 @@ export function riskReturnFrontierChart(container, series) {
     exporting: {
       enabled: false,
     },
+  });
+}
+
+// series is a list of dicts {'equity': 'X%', 'value': [y1, y2, ...]}
+export function distributionChart(container, series, title) {
+  const colours = generateColors(series.length, 0.5);
+  Highcharts.chart(container, {
+    chart: {
+      type: "bellcurve",
+    },
+    title: {
+      text: title,
+    },
+    xAxis: [
+      {
+        title: { text: "Value" },
+      },
+    ],
+    yAxis: [
+      {
+        title: { text: "Frequency" },
+      },
+    ],
+    series: series.map((s, i) => {
+      return {
+        name: s.equity,
+        type: "bellcurve",
+        baseSeries: s.equity,
+        zIndex: -1,
+        color: colours[i],
+      }
+    }).concat(series.map((s, i) => {
+      return {
+        name: s.equity,
+        // type: "scatter",
+        visible: false,
+        data: s.value,
+        id: s.equity,
+        // marker: {
+        //   radius: 1.5,
+        // },
+        showInLegend: false,
+      };
+    }))
   });
 }
