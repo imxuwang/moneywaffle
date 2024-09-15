@@ -1,7 +1,7 @@
 site_name: Money Waffle
 theme:
-  # name: terminal
-  name: cinder
+  name: terminal
+  # name: cinder
   # name: material
   # name: simple-blog
   # name: bootstrap386
