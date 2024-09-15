@@ -1,6 +1,6 @@
 # Asset Allocation
 
-**Last updated: 2024-09-10**
+**Last updated: 2024-09-15**
 
 ## Goal
 
@@ -150,30 +150,47 @@ In tests involving expenses, the total actual expense is used as an indicator of
 
 ### Random Periods
 
-#### 10 Years
+#### Annualized Return
 
 <div id="asset-allocation-return-random-10-years-no-expense-container"></div>
-<div id="asset-allocation-risk-random-10-years-no-expense-container"></div>
-
-#### 15 Years
-
-<div id="asset-allocation-return-random-15-years-no-expense-container"></div>
-<div id="asset-allocation-risk-random-15-years-no-expense-container"></div>
-
-#### 20 Years
-
 <div id="asset-allocation-return-random-20-years-no-expense-container"></div>
-<div id="asset-allocation-risk-random-20-years-no-expense-container"></div>
-
-#### 30 Years
-
 <div id="asset-allocation-return-random-30-years-no-expense-container"></div>
-<div id="asset-allocation-risk-random-30-years-no-expense-container"></div>
-
-#### 40 Years
-
 <div id="asset-allocation-return-random-40-years-no-expense-container"></div>
+
+#### Risk (Standard Deviation)
+
+<div id="asset-allocation-risk-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-risk-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-risk-random-30-years-no-expense-container"></div>
 <div id="asset-allocation-risk-random-40-years-no-expense-container"></div>
+
+#### Return Per Risk
+
+<div id="asset-allocation-return-per-risk-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-40-years-no-expense-container"></div>
+
+#### Max Drawdown
+
+<div id="asset-allocation-max-drawdown-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-40-years-no-expense-container"></div>
+
+#### Max Drawdown Duration
+
+<div id="asset-allocation-max-drawdown-duration-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-40-years-no-expense-container"></div>
+
+#### Minimal Net Asset
+
+<div id="asset-allocation-minimal-net-asset-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-40-years-no-expense-container"></div>
 
 ## Performance With Expense
 
@@ -223,3 +240,54 @@ In tests involving expenses, the total actual expense is used as an indicator of
 <div id="asset-allocation-net-asset-growth-2000-2023-with-expense-container"></div>
 
 <div id="asset-allocation-risk-return-frontier-2000-2023-with-expense-container"></div>
+
+### Random Periods
+
+#### Annualized Return
+
+<div id="asset-allocation-return-random-10-years-expense-container"></div>
+<div id="asset-allocation-return-random-20-years-expense-container"></div>
+<div id="asset-allocation-return-random-30-years-expense-container"></div>
+<div id="asset-allocation-return-random-40-years-expense-container"></div>
+
+#### Risk (Standard Deviation)
+
+<div id="asset-allocation-risk-random-10-years-expense-container"></div>
+<div id="asset-allocation-risk-random-20-years-expense-container"></div>
+<div id="asset-allocation-risk-random-30-years-expense-container"></div>
+<div id="asset-allocation-risk-random-40-years-expense-container"></div>
+
+#### Return Per Risk
+
+<div id="asset-allocation-return-per-risk-random-10-years-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-20-years-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-30-years-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-40-years-expense-container"></div>
+
+#### Max Drawdown
+
+<div id="asset-allocation-max-drawdown-random-10-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-20-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-30-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-40-years-expense-container"></div>
+
+#### Max Drawdown Duration
+
+<div id="asset-allocation-max-drawdown-duration-random-10-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-20-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-30-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-40-years-expense-container"></div>
+
+#### Minimal Net Asset
+
+<div id="asset-allocation-minimal-net-asset-random-10-years-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-20-years-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-30-years-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-40-years-expense-container"></div>
+
+#### Expense
+
+<div id="asset-allocation-expense-random-10-years-expense-container"></div>
+<div id="asset-allocation-expense-random-20-years-expense-container"></div>
+<div id="asset-allocation-expense-random-30-years-expense-container"></div>
+<div id="asset-allocation-expense-random-40-years-expense-container"></div>
