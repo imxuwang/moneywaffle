@@ -27,11 +27,11 @@ jobs:
             mkdocs-material-
       - run: >
           pip install mkdocs-material \
-                      mkdocs-terminal \
-                      mkdocs-charts-plugin \
-                      mkdocs-cinder \
-                      mkdocs-simple-blog \
-                      mkdocs-bootstrap386 \ 
-                      mkdocs-minify-plugin \
-                      python-markdown-math
+          pip install mkdocs-terminal \
+          pip install mkdocs-charts-plugin \
+          pip install mkdocs-cinder \
+          pip install mkdocs-simple-blog \
+          pip install mkdocs-bootstrap386 \ 
+          pip install mkdocs-minify-plugin \
+          pip install python-markdown-math
       - run: mkdocs gh-deploy --force
