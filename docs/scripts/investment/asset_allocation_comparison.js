@@ -111,7 +111,7 @@ $.getJSON(
               value: item.returns,
             };
           }),
-        `Annualized return of random ${period} Years`
+        `Annualized return distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-risk-random-${period}-years-no-expense-container`,
@@ -125,7 +125,7 @@ $.getJSON(
               value: item.risks,
             };
           }),
-        `Risk of random ${period} Years`
+        `Risk distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-return-per-risk-random-${period}-years-no-expense-container`,
@@ -139,7 +139,7 @@ $.getJSON(
               value: item.return_per_risks,
             };
           }),
-        `Return per risk of random ${period} Years`
+        `Return per risk distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-max-drawdown-random-${period}-years-no-expense-container`,
@@ -153,7 +153,7 @@ $.getJSON(
               value: item.max_drawdowns,
             };
           }),
-        `Max drawdown of random ${period} Years`
+        `Max drawdown distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-max-drawdown-duration-random-${period}-years-no-expense-container`,
@@ -167,7 +167,7 @@ $.getJSON(
               value: item.max_drawdown_durations,
             };
           }),
-        `Max drawdown duration of random ${period} Years`
+        `Max drawdown duration distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-minimal-net-asset-random-${period}-years-no-expense-container`,
@@ -181,7 +181,7 @@ $.getJSON(
               value: item.min_net_assets,
             };
           }),
-        `Minimal net asset of random ${period} Years`
+        `Minimal net asset distribution of random ${period} Years`
       );
     });
   }
@@ -204,7 +204,7 @@ $.getJSON(
               value: item.returns,
             };
           }),
-        `Annualized return of random ${period} Years`
+        `Annualized return distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-risk-random-${period}-years-expense-container`,
@@ -218,7 +218,7 @@ $.getJSON(
               value: item.risks,
             };
           }),
-        `Risk of random ${period} Years`
+        `Risk distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-return-per-risk-random-${period}-years-expense-container`,
@@ -232,7 +232,7 @@ $.getJSON(
               value: item.return_per_risks,
             };
           }),
-        `Return per risk of random ${period} Years`
+        `Return per risk distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-max-drawdown-random-${period}-years-expense-container`,
@@ -246,7 +246,7 @@ $.getJSON(
               value: item.max_drawdowns,
             };
           }),
-        `Max drawdown of random ${period} Years`
+        `Max drawdown distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-max-drawdown-duration-random-${period}-years-expense-container`,
@@ -260,7 +260,7 @@ $.getJSON(
               value: item.max_drawdown_durations,
             };
           }),
-        `Max drawdown duration of random ${period} Years`
+        `Max drawdown duration distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-minimal-net-asset-random-${period}-years-expense-container`,
@@ -274,7 +274,7 @@ $.getJSON(
               value: item.min_net_assets,
             };
           }),
-        `Minimal net asset of random ${period} Years`
+        `Minimal net asset distribution of random ${period} Years`
       );
       distributionChart(
         `asset-allocation-expense-random-${period}-years-expense-container`,
@@ -288,7 +288,7 @@ $.getJSON(
               value: item.expenses,
             };
           }),
-        `Total expense of random ${period} Years`
+        `Total expense distribution of random ${period} Years`
       );
     });
   }

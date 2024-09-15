@@ -17,13 +17,17 @@ export function assetGrowthChart(container, series) {
       title: {
         text: "Amount",
       },
+      min: 0,
+    },
+    xAxis: {
+      min: 0,
     },
     credits: {
       enabled: false,
     },
     plotOptions: {
       column: {
-        borderRadius: "25%",
+        borderRadius: "10%",
       },
     },
     series: series.map((s) => {
@@ -41,7 +45,7 @@ export function assetGrowthChart(container, series) {
 export function riskReturnFrontierChart(container, series) {
   Highcharts.chart(container, {
     chart: {
-      type: "line",
+      type: "scatter",
     },
     title: {
       text: "Risk-Return",
@@ -50,11 +54,13 @@ export function riskReturnFrontierChart(container, series) {
       title: {
         text: "Risk (%)",
       },
+      min: 0,
     },
     yAxis: {
       title: {
         text: "Return (%)",
       },
+      min: 0,
     },
     tooltip: {
       formatter: function () {
@@ -91,7 +97,7 @@ export function riskReturnFrontierChart(container, series) {
           };
         }),
         dataLabels: {
-          enabled: true,
+          enabled: false,
           formatter: function () {
             return (
               this.point.equity +
@@ -125,7 +131,11 @@ export function distributionChart(container, series, title) {
     ],
     yAxis: [
       {
-        title: { text: "Frequency" },
+        labels: {
+          enabled: false,
+        },
+        // title: { text: "Frequency" },
+        title: undefined,
       },
     ],
     series: series.map((s, i) => {
@@ -148,6 +158,12 @@ export function distributionChart(container, series, title) {
         // },
         showInLegend: false,
       };
-    }))
+    })),
+    exporting: {
+      enabled: false,
+    },
+    credits: {
+      enabled: false,
+    },
   });
 }
