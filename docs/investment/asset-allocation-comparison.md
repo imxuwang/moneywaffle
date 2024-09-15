@@ -6,6 +6,11 @@
 
 The primary objective is to backtest various asset allocations between stocks and bonds to identify optimized allocations across different periods, with a specific focus on how expenses impact investment returns.
 
+## No-Goal
+
+This article does not offer any investment advice.
+The test configuration is only one possible scenario and may not reflect actual investment or living conditions.
+
 ## Test Setup
 
 ### Data
