@@ -1,6 +1,6 @@
 <!-- # Asset Allocation -->
 
-**Last updated: 2024-09-15**
+**Last updated: 2024-09-16**
 
 ## Goal
 
