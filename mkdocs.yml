@@ -1,9 +1,9 @@
 site_name: Money Waffle
 theme:
-  name: terminal
+  # name: terminal
   # name: cinder
   # name: material
-  # name: simple-blog
+  name: simple-blog
   # name: bootstrap386
   # name: topdf
   font:

@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define the mapping of page paths to script paths
   var scripts = {
-    "/investment/asset-allocation-comparison":
-      "investment/asset_allocation_comparison.js",
+    "/investment/asset-allocation":
+      "investment/asset_allocation.js",
   };
 
   // Load the appropriate script if it exists
