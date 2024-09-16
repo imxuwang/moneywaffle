@@ -1,4 +1,4 @@
-<!-- # Asset Allocation -->
+# Asset Allocation
 
 **Last updated: 2024-09-16**
 
