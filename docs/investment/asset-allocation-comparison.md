@@ -108,6 +108,23 @@ In tests involving expenses, the total actual expense is used as an indicator of
 
 ### Sequential Periods
 
+The longest analyzed period spans from 1935 to 2023, encompassing 90 years.
+Over this extended timeframe, a high equity allocation consistently delivers better returns compared to portfolios with lower equity exposure.
+However, during shorter periods, the performance of a 100% equity allocation is not significantly superior to more diversified approaches, particularly in times of heightened volatility.
+
+The years from 2000 to 2015 represent the most volatile period among the three tested intervals.
+In this timeframe, a pure equity allocation not only produced the lowest returns but also carried the highest risk.
+Interestingly, an all-bond allocation during this period did not result in the highest return or the lowest risk, indicating that both extreme allocations—whether fully in equities or entirely in bonds—fail to offer adequate diversification benefits.
+
+Across all periods, portfolios with diversified allocations, combining both equities and bonds, exhibited the lowest risk, particularly when analyzed using return-per-risk metrics.
+The 100% equity allocation consistently produced the worst return-per-risk ratio, while the 40% equity allocation performed the best, followed closely by portfolios with 20% and 60% equity allocations.
+
+This supports the popularity of the 60/40 portfolio—often advocated by books, financial articles, and advisors.
+The 60/40 allocation strikes a balance between different asset classes, offering a reasonable trade-off between return and risk.
+Its widespread endorsement is rooted in its ability to deliver stable and predictable results over various market conditions, making it a favored choice for long-term investors seeking both growth and protection.
+
+### Results
+
 #### 1935 to 2023
 
 |Equity|Return|Risk|Return/Risk|Max Drawdown|Max Drawdown Dration|Min Net Asset|
@@ -154,6 +171,24 @@ In tests involving expenses, the total actual expense is used as an indicator of
 <div id="asset-allocation-risk-return-frontier-2000-2023-no-expense-container"></div>
 
 ### Random Periods
+
+Randomized tests reveal distinct patterns in investment metrics.
+First and foremost, annualized returns tend to benefit more from equity exposure as the investment time horizon lengthens.
+However, when investing for periods of 10, 20, or even 30 years, the return from a 100% equity portfolio is not significantly better than that of an 80/20 equity-to-bond allocation.
+This suggests that while equities generally drive long-term growth, a small portion of bonds can provide a more stable return without sacrificing much performance.
+
+A key observation, which holds across other metrics as well, is the instability of results over shorter timeframes.
+This is evident in the variability of returns, as demonstrated by the width of the bell curves for each time period.
+For instance, in a 10-year investment horizon, the return of a pure equity portfolio can range dramatically, from -10% to 30%.
+However, as the investment period extends to 40 years, the range narrows significantly, with returns typically falling between 2.5% and 17.5%.
+This highlights that, over longer durations, equity returns tend to become more predictable.
+Additionally, introducing bonds into the portfolio can further stabilize returns, mitigating the volatility seen with an all-equity approach.
+
+Risk follows a similar pattern to these findings from sequential period tests.
+As expected, the highest level of risk comes from an all-equity portfolio.
+However, contrary to what one might assume, the portfolio with the lowest risk is not the 100% bond allocation.
+Instead, diversified portfolios that combine equities and bonds effectively reduce risk.
+This supports the concept that diversification, by spreading exposure across multiple asset classes, plays a crucial role in risk mitigation.
 
 #### Annualized Return
 
