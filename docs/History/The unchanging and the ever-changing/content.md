@@ -64,7 +64,7 @@ The long history of China has continued and developed through their mutual influ
         1. The Han Dynasty's Missed Opportunity for Openness
         1. What Was Ancient China's External Influence?
         1. Was Chang’an of the Tang Dynasty the Center of the World?
-    1. Part III: The Central Nervous System of Ancient China
+1. Part III: The Central Nervous System of Ancient China
     1. Introduction: Why do wise founding emperors often become tyrants?
     1. Chapter 8: The World / Gaining and Governing the Empire
         1. Hu Clothing and Cavalry in the Age of Horse Warfare
@@ -85,4 +85,4 @@ The long history of China has continued and developed through their mutual influ
         1. The Imperial Clan: The Challenges of Being Royalty
         1. Succession: Legacy "Regarded as Life Itself"
         1. Records: The "Official Version" of History
-    1. Conclusion: How Should We View China’s Historical Records?
+1. Conclusion: How Should We View China’s Historical Records?
