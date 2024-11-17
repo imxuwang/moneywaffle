@@ -14,6 +14,12 @@ plugins:
   # - md-to-html
   - search
   - minify
+  - mkdocs-nav-weight:
+      section_renamed: true
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false
 
 extra_javascript:
   - https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
