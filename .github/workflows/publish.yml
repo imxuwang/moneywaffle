@@ -33,5 +33,6 @@ jobs:
                       mkdocs-simple-blog \
                       mkdocs-bootstrap386 \
                       mkdocs-minify-plugin \
-                      python-markdown-math
+                      python-markdown-math \
+                      mkdocs-nav-weight
       - run: mkdocs gh-deploy --force
