@@ -28,9 +28,9 @@ The long history of China has continued and developed through their mutual influ
     1. [Introduction: The term "China" appeared more than 3,000 years ago](./part_1_intro.md)
     1. Chapter 1: Territory / The Land We Live On
         1. ["The Great Nine Provinces" and "A Foot-long Ruler"](./part_1_ch_1_sec_1.md)
-        1. How Large Was Ancient China?
-        1. How Did the Territory of Ancient China Change Over Time?
-        1. How Did Ancient Central Governments Divide Major Administrative Regions?
+        1. [How Large Was Ancient China?](./part_1_ch_1_sec_2.md)
+        1. [How Did the Territory of Ancient China Change Over Time?](./part_1_ch_1_sec_3.md)
+        1. [How Did Ancient Central Governments Divide Major Administrative Regions?](./part_1_ch_1_sec_4.md)
     1. Chapter 2: Cities / The Changing Capitals
         1. Chang'an and Luoyang of the Han Dynasty
         1. The Northern Wei Emperor Xiaowen’s Capital Relocation and Sinicization

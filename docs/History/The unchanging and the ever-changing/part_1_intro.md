@@ -4,7 +4,7 @@ weight: 20
 ---
 # Introduction: The term "China" appeared more than 3,000 years ago
 
-*Back to* [contents](./content.md)
+*Back to [contents](./content.md)*
 
 ##When Did the Name "China" First Appear?
 

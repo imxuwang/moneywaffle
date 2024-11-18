@@ -5,7 +5,7 @@ weight: 30
 
 # "The Great Nine Provinces" and "A Foot-long Ruler"
 
-*Back to* [contents](./content.md)
+*Back to [contents](./content.md)*
 
 In Chinese history, there are some concepts that have been used for a long time but never became a reality, such as the well-known "Nine Provinces" (九州). The general belief, particularly based on Confucian classics, is that the "Nine Provinces" refers to the nine regions of China that were created after the great Yu the Great (大禹) controlled the flood, in order to manage and govern the country more effectively. However, according to existing historical records and archaeological findings, there is no concrete evidence that Yu and his era ever existed. Even if he did exist, the rulers at that time could not have governed such a large area directly. Therefore, this concept remained an ideal, a reflection of a vision, not a practical reality.
 
