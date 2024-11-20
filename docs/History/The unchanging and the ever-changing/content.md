@@ -32,7 +32,7 @@ The long history of China has continued and developed through their mutual influ
         1. [How Did the Territory of Ancient China Change Over Time?](./part_1_ch_1_sec_3.md)
         1. [How Did Ancient Central Governments Divide Major Administrative Regions?](./part_1_ch_1_sec_4.md)
     1. Chapter 2: Cities / The Changing Capitals
-        1. Chang'an and Luoyang of the Han Dynasty
+        1. [Chang'an and Luoyang of the Han Dynasty](./part_1_ch_2_sec_1.md)
         1. The Northern Wei Emperor Xiaowen’s Capital Relocation and Sinicization
         1. The Two Capitals of the Sui and Tang Dynasties
         1. The Dual Capitals of the Ming Dynasty
