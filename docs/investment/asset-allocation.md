@@ -1,4 +1,8 @@
-# Asset Allocation
+---
+title: "Asset allocation analysis for two asset classes: equity and bond"
+---
+
+# Asset allocation analysis for two asset classes: equity and bond
 
 **Last updated: 2024-09-16**
 
