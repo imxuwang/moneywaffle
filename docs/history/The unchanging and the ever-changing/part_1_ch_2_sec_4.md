@@ -1,0 +1,34 @@
+---
+title: The Dual Capitals of the Ming Dynasty
+weight: 90
+---
+
+# The Dual Capitals of the Ming Dynasty
+
+*Back to [contents](./content.md)*
+
+Throughout Chinese history, most dynasties had only one capital, with other cities at most being referred to as secondary capitals. In some cases, dynasties moved their capitals during their reigns, and the original capital often held a secondary capital status. Some emperors lived outside the capital for extended periods or did not officially relocate the capital, in which case the emperor's residence was called "xingzai" (temporary capital), meaning a provisional capital.
+
+However, the Ming Dynasty was unique in establishing two capitals. The administrative divisions of the Ming Dynasty were akin to today's provincial units and were called the Two Capitals and Thirteen Provincial Governors' Offices, with Beijing and Nanjing as the two capitals, plus thirteen provinces. How did this dual capital system come about?
+
+As mentioned earlier, Zhu Yuanzhang, the founding emperor of the Ming Dynasty, recognized that for a unified empire, Nanjing was not an ideal capital. However, he never found or built an ideal new capital, so he stayed in Nanjing. Unable to move, he expanded the capital's direct jurisdiction—the "capital district." In the Yuan Dynasty, the area north of the Yangtze River was under the jurisdiction of the Henan and Jiangbei provinces, while the south was governed by the Jiangsu-Zhejiang provinces. Zhu Yuanzhang centered his governance around Nanjing, incorporating what is today Jiangsu, Anhui, and Shanghai into the "Capital District" (Jing Shi Zhi Li), even temporarily including Jiaxing from Zhejiang. Later, he realized that this was too small and returned the area to Zhejiang. His hometown, Haozhou (modern-day Fengyang, Anhui), was first established as Lin Hao Prefecture, later renamed Zhongli Prefecture, and eventually became Anhui's Fengyang Prefecture. To ensure his hometown enjoyed the capital's status and imperial favor, it was incorporated into the Nanjing district.
+
+After Zhu Yuanzhang's death, the throne passed to his deceased son’s heir, the grand prince Zhu Yunwen (Emperor Jianwen). Zhu Yuanzhang's fourth son, Prince Yan Zhu Di, was stationed in Beiping (modern-day Beijing), the former capital of the Yuan Dynasty. In the following year, 1399, Zhu Di rebelled under the pretext of "Jingnan" (pacifying the south), and by 1402, he had taken the capital. Emperor Jianwen died in a fire, and Zhu Di ascended the throne, becoming Emperor Chengzu of the Ming Dynasty.
+
+In the first month of 1403, Zhu Di officially renamed Beiping to Beijing and established the Shuntian Prefecture in February. He set up various governing bodies in Beijing and ordered the construction of palaces there in 1406. By 1409, Zhu Di personally moved to Beijing, leaving his son in Nanjing to govern. However, Zhu Di continued to travel back and forth between Beijing and Nanjing until 1417, when he finally left Nanjing for Beijing permanently. In 1420, he decreed that Beijing would become the capital, officially declaring the transfer of the capital from Nanjing to Beijing.
+
+The relocation of the capital to Beijing seemed natural, considering Zhu Di’s long residence in Beiping and his military base there. Moreover, Beijing's location was strategic for confronting the remnants of the Yuan Dynasty in the north and preventing Mongol invasions. The decision proved to be a correct strategic choice, but why did the process take so long? The explanation in the early years could be the need for building infrastructure and palaces, but after that, the delay cannot be explained by conventional reasoning.
+
+In 1424, Zhu Di died on a military campaign, and his son, Emperor Renzong, ascended the throne. In 1425, he announced the relocation of the capital to Nanjing, and all Beijing departments were renamed "xingzai" (temporary capital). However, Emperor Renzong died shortly afterward, and his successor, Emperor Xuanzong, ruled for ten years, during which time Beijing remained the capital. It wasn’t until 1441, during the reign of Emperor Yingzong, that the capital was officially confirmed as Beijing, and the departments were no longer called "xingzai."
+
+From then on, the dual capital system remained in place until the fall of the Ming Dynasty. Nanjing continued to enjoy capital status, functioning almost identically to Beijing. The imperial palace and royal sites in Nanjing were preserved, and major state functions, such as ceremonies, decrees, and government announcements, were held simultaneously in both capitals or first in Beijing and then in Nanjing. The imperial punishment system also applied in Nanjing, where the local officials carried out punishments in the same manner as in Beijing.
+
+Nanjing maintained all administrative structures, but the officials there were largely ceremonial, symbolic, and non-executive, with no real power. For example, the "Minister of Defense" in Nanjing was essentially a ceremonial role with no actual duties. However, it was a comfortable position for officials who had fallen out of favor but couldn't be removed, such as the famous official Hai Rui, who was assigned to Nanjing as a ceremonial figure after his influence waned in Beijing.
+
+Why did the Ming Dynasty take so long to move the capital and maintain a dual capital system for so long, involving so much effort and resources? On the surface, it was because of the desire not to break from Zhu Yuanzhang's original decision. But was that reason truly sufficient?
+
+To understand this, we must look beyond the surface of historical texts and examine the political realities behind them. Zhu Di, though the son of Zhu Yuanzhang, was not the rightful heir. He seized the throne through rebellion and thus faced a legitimacy crisis. His prolonged focus on maintaining the status quo, especially in relation to his father’s decisions, reflects his need to solidify his political legitimacy.
+
+The dual capital system and the delay in the capital’s final relocation can be understood as part of this larger effort to legitimize his rule, as well as a reflection of the immense resources he was willing to expend to create the appearance of continuity and stability in his reign.
+
+As for Zhu Di's son, Emperor Renzong, it is difficult to say whether he would have moved the capital back to Nanjing had he ruled longer, as his reign was very short. The mystery of Emperor Jianwen's whereabouts also remains unsolved, but it's important to remember that historical questions often remain unresolved, and assumptions should not guide serious historical study.
