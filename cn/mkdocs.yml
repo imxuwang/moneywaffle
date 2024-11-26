@@ -1,0 +1,44 @@
+site_name: Money Waffle
+theme:
+  # name: terminal
+  name: cinder
+  # name: material
+  # name: simple-blog
+  # name: bootstrap386
+  # name: topdf
+  font:
+    text: Lora
+    # text: 'Noto Serif'
+    code: Mulish
+plugins:
+  # - md-to-html
+  - search
+  - minify
+  - mkdocs-nav-weight:
+      section_renamed: true
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false
+
+extra_javascript:
+  - https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
+  - https://code.highcharts.com/highcharts.js
+  - https://code.highcharts.com/modules/histogram-bellcurve.js
+  - https://code.highcharts.com/modules/exporting.js
+  - https://code.highcharts.com/modules/export-data.js
+  - https://code.highcharts.com/modules/accessibility.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  # - https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js
+  - scripts/default.js
+  - scripts/load_scripts.js
+
+extra_css:
+  # - https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css
+  # - https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css
+  - css/highcharts.css
+
+markdown_extensions:
+    - mdx_math
+
+copyright: Copyright 2024 MoneyWaffle.com. All rights reserved. Please <a href="mailto:support@moneywaffle.com">contact us</a> for more information.

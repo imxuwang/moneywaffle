@@ -41,11 +41,14 @@ jobs:
                       python-markdown-math \
                       mkdocs-nav-weight
       # - run: mkdocs gh-deploy --force
-      - name: Build EN site
+      - name: Build sites
         run: |
           mkdocs build
+          mkdocs build -f cn/mkdocs.yml
       - name: Move files to temp dir
-        run: mv site $TEMP_DIR
+        run: |
+          mv cn/site site/cn
+          mv site $TEMP_DIR
       - name: Push to target branch
         run: |
           git fetch

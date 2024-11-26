@@ -1,3 +1,1 @@
 # Rental Cost
-
-Test build
