@@ -8,6 +8,9 @@ permissions:
   contents: write
 jobs:
   deploy:
+    env:
+      - TARGET_BRANCH: gh-pages
+      - TEMP_DIR: /tmp/site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,4 +38,18 @@ jobs:
                       mkdocs-minify-plugin \
                       python-markdown-math \
                       mkdocs-nav-weight
-      - run: mkdocs gh-deploy --force
+      # - run: mkdocs gh-deploy --force
+      - name: Build EN site
+        run: |
+          mkdocs build
+      - name: Move files to temp dir
+        run: mv site $TEMP_DIR
+      - name: Push to target branch
+        run: |
+          git fetch
+          git checkout $TARGET_BRANCH
+          rm -rf *
+          mv $TEMP_DIR/* .
+          git add -A
+          git diff-index --quiet HEAD || git commit -am "Deploy to target branch"
+          git push origin $TARGET_BRANCH
