@@ -14,15 +14,16 @@ plugins:
   # - md-to-html
   - search
   - minify
-  - mkdocs-nav-weight:
-      section_renamed: true
-      index_weight: -10
-      warning: true
-      reverse: false
-      headless_included: false
+  # - mkdocs-nav-weight:
+  #     section_renamed: true
+  #     index_weight: -10
+  #     warning: true
+  #     reverse: false
+  #     headless_included: false
 
 nav:
   - Home: index.md
+  - Weekly: weekly/content.md
   - Economy: '#'
   - Investment:
     - 'Asset allocation analysis for two asset classes: equity and bond': investment/asset-allocation.md
