@@ -48,6 +48,8 @@ jobs:
         run: |
           git fetch
           git checkout $TARGET_BRANCH
+          rm -rf *
+          mv $TEMP_DIR/* .
           git add -A
           git diff-index --quiet HEAD || git commit -am "Deploy to target branch"
           git push origin $TARGET_BRANCH
