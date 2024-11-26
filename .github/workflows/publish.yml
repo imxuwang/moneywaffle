@@ -6,11 +6,13 @@ on:
       - main
 permissions:
   contents: write
+
+env:
+  - TARGET_BRANCH: gh-pages
+  - TEMP_DIR: /tmp/site
+
 jobs:
   deploy:
-    env:
-      - TARGET_BRANCH: gh-pages
-      - TEMP_DIR: /tmp/site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
