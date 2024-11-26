@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Asset allocation analysis for two asset classes: equity and bond - Money Waffle</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../css/highcharts.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Money Waffle</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">MoneyWaffle</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Economy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../economy/rental-cost/">Rental Cost</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">History <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../history/they_are_in_siam/">They are in Siam</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">The unchanging and the ever changing</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/content/">Content</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_intro/">Introduction: The term "China" appeared more than 3,000 years ago</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_1_sec_1/">The Great Nine Provinces and A Foot-long Ruler</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_1_sec_2/">How Large Was Ancient China?</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_1_sec_3/">How Did the Territory of Ancient China Change Over Time?</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_1_sec_4/">How Did Ancient Central Governments Divide Major Administrative Regions?</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_2_sec_1/">Chang'an and Luoyang of the Han Dynasty</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_2_sec_2/">The Northern Wei Emperor Xiaowen’s Capital Relocation and Sinicization</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_2_sec_3/">The Two Capitals of the Sui and Tang Dynasties</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_2_sec_4/">The Dual Capitals of the Ming Dynasty</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Investment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Asset allocation analysis for two asset classes: equity and bond</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">金融与投资 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">实践中的投资组合管理</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%E7%9B%AE%E5%BD%95/">目录</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%E5%89%8D%E8%A8%80/">前言</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%E7%AE%80%E4%BB%8B/">简介</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88/">管理投资组合</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%90%86%E8%AE%BA/">投资组合理论</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%20%E8%A1%A1%E9%87%8F%E5%9B%9E%E6%8A%A5/">衡量回报</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">金融市场指南</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E7%9B%AE%E5%BD%95/">目录</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E9%87%8D%E8%A6%81/">为什么金融市场重要</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E5%A4%96%E6%B1%87%E5%B8%82%E5%9C%BA/">外汇市场</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E8%B4%A7%E5%B8%81%E5%B8%82%E5%9C%BA/">货币市场</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E5%80%BA%E5%88%B8%E5%B8%82%E5%9C%BA/">债券市场</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../history/The%20unchanging%20and%20the%20ever-changing/part_1_ch_2_sec_4/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../../%E9%87%91%E8%9E%8D%E4%B8%8E%E6%8A%95%E8%B5%84/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%AE%A1%E7%90%86/%E7%9B%AE%E5%BD%95/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#asset-allocation-analysis-for-two-asset-classes-equity-and-bond">Asset allocation analysis for two asset classes: equity and bond</a></li>
+            <li class="second-level"><a href="#goal">Goal</a></li>
+                
+                <li class="third-level"><a href="#no-goal">No-Goal</a></li>
+            <li class="second-level"><a href="#test-setup">Test Setup</a></li>
+                
+                <li class="third-level"><a href="#data">Data</a></li>
+                <li class="third-level"><a href="#configuration">Configuration</a></li>
+                <li class="third-level"><a href="#periods">Periods</a></li>
+                <li class="third-level"><a href="#metrics">Metrics</a></li>
+            <li class="second-level"><a href="#performance-without-expense">Performance Without Expense</a></li>
+                
+                <li class="third-level"><a href="#sequential-periods_1">Sequential Periods</a></li>
+                <li class="third-level"><a href="#random-periods_1">Random Periods</a></li>
+            <li class="second-level"><a href="#performance-with-expense">Performance With Expense</a></li>
+                
+                <li class="third-level"><a href="#sequential-periods_2">Sequential Periods</a></li>
+                <li class="third-level"><a href="#random-periods_2">Random Periods</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="asset-allocation-analysis-for-two-asset-classes-equity-and-bond">Asset allocation analysis for two asset classes: equity and bond</h1>
+<p><strong>Last updated: 2024-09-16</strong></p>
+<h2 id="goal">Goal</h2>
+<p>The primary objective is to backtest various asset allocations between stocks and bonds to identify optimized allocations across different periods, with a specific focus on how expenses impact investment returns.</p>
+<h3 id="no-goal">No-Goal</h3>
+<p>This article does not offer any investment advice.
+The test configuration is only one possible scenario and may not reflect actual investment or living conditions.</p>
+<h2 id="test-setup">Test Setup</h2>
+<h3 id="data">Data</h3>
+<p>The historical return of stocks, bonds and bills are taken from <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html">NYU</a>.
+It covers the period from 1928 until 2023.
+I use <code>S&amp;P500</code> and <code>T.Bond</code> to refer to the columns <code>S&amp;P 500 (includes dividends)</code> and <code>US T. Bond (10-year)</code>.</p>
+<div id="sp500-bond-historical-return-container"></div>
+
+<h3 id="configuration">Configuration</h3>
+<p>The test configurations are:</p>
+<ul>
+<li>Assets are rebalanced at the start of each year.</li>
+<li>The risk factor is determined based on standard deviation.</li>
+<li>Initial expenses, when considered, are composed as follows:<ul>
+<li>Rental: $2,000 per month (~£1,525 per month, ~€1,811 per month)</li>
+<li>Other expenses: $2,000 per month<ul>
+<li>Includes recurring expenses, e.g., grocery, utilities, transportation.</li>
+<li>Also includes one-off expenses, e.g., vacation.</li>
+</ul>
+</li>
+<li>Total: $4,000 per month or $48,000 annually</li>
+</ul>
+</li>
+<li>The minimal expense ratio is set at 75%.</li>
+<li>Inflation, though complex and varying across countries and time periods, is fixed at 2% to focus on allocation comparisons.<ul>
+<li>Beware that it is a <strong>strong</strong> assumption.</li>
+</ul>
+</li>
+<li>Expenses are deducted at the beginning of each year.</li>
+<li>Risk free rate is not considered.</li>
+</ul>
+<p>The initial expense and any expense calcualted in the succeeding years based on the inflation are called the <em>full expense</em>.
+The stated expenses are sufficient to support a comfortable lifestyle for a couple in low-cost countries such as Thailand or Spain.
+In the event of a market downturn, reducing expenses becomes one of the most effective strategies for financial survival.
+Theoretically, having no expenses allows for a quicker portfolio recovery than any positive expense level, as negative expenses would imply cash inflows into the investment.
+However, to maintain a reasonable quality of life, there must be a minimum level of expenditure at all times.</p>
+<p>This is where the minimal expense ratio comes into play, ensuring that expenses do not drop below a certain threshold.
+The actual expenses incurred will fall somewhere between this minimal level and the full, pre-determined expense amount.
+To determine the actual expense, the 4% rule is applied.</p>
+<p>Let</p>
+<ul>
+<li>
+<script type="math/tex">\pi</script> represent the inflation,</li>
+<li>
+<script type="math/tex">E_{f}^i</script> represent the full expense of the <script type="math/tex">i</script>-th year,<ul>
+<li>
+<script type="math/tex">E_{f}^1 = $48,000</script>
+</li>
+<li>
+<script type="math/tex">E_{f}^i = E_{f}^0 \times (1 + \pi)^{i - 1}</script>, <script type="math/tex">\forall i \in \{1, 2, \dots, n\}</script>
+</li>
+</ul>
+</li>
+<li>
+<script type="math/tex">\theta</script> represent the minimal expense ratio,</li>
+<li>
+<script type="math/tex">V^i_s</script> represent the total value of asset at the beginning of the <script type="math/tex">i</script>-th year,<ul>
+<li>
+<script type="math/tex">V^1_s</script>, the initial value, is a test variable and is discussed later in tests with expense,</li>
+</ul>
+</li>
+<li>
+<script type="math/tex">E_{a}^i</script> represent the actual expense of the <script type="math/tex">i</script>-th year.</li>
+</ul>
+<p>The actual expense is calculated as:</p>
+<p>
+<script type="math/tex; mode=display">E_{a}^i = \min\left\{E_{f}^i, \max\left\{E_{f}^i \times \theta, V^i_s \times 4\%\right\}\right\}</script>
+</p>
+<p>This formula ensures that expenses remain within a sustainable range, balancing between maintaining quality of life and preserving assets during market fluctuations.</p>
+<h3 id="periods">Periods</h3>
+<p>Two types of periods are selected for analysis: sequential and random.
+Sequential periods consist of continuous historical time frames, allowing for an assessment of performance over actual historical trends.
+Random periods, on the other hand, are constructed by selecting and reordering historical returns randomly, without replacement, to simulate a variety of possible scenarios.</p>
+<h4 id="sequential-periods">Sequential Periods</h4>
+<p>Three periods are tested:</p>
+<ul>
+<li>1935 to 2023<ul>
+<li>This period represents the longest span following the 1929 Depression.</li>
+<li>Key reasons for selecting this timeframe include the establishment of the <a href="https://www.britannica.com/money/Securities-and-Exchange-Commission">SEC</a> in 1934 to regulate financial markets and the transformation of the <a href="https://www.britannica.com/money/Federal-Reserve-System">Federal Reserve</a> into a modern central bank.</li>
+</ul>
+</li>
+<li>2000 to 2015<ul>
+<li>This period marks the longest economic downturn in recent history.</li>
+<li>The market began its decline in 2000 and took until 2015 to fully recover, as measured by the <a href="https://www.macrotrends.net/2324/sp-500-historical-chart-data">S&amp;P 500 index</a> (excluding dividend reinvestment).</li>
+</ul>
+</li>
+<li>2000 to 2023<ul>
+<li>This timeframe encompasses a significant depression followed by the longest bull market in history.</li>
+<li>It serves as a test of the balance between risk and growth.</li>
+</ul>
+</li>
+</ul>
+<h4 id="random-periods">Random Periods</h4>
+<p>Three different period lengths—10, 15, and 20 years—are tested, with 1,000 random samples taken for each.
+The samples are drawn from historical returns spanning from 1935 to 2023, inclusive.</p>
+<h3 id="metrics">Metrics</h3>
+<p>The following metrics are used:</p>
+<ul>
+<li>Annualized return</li>
+<li>Standard deviation of yearly return (risk)</li>
+<li>Annualized return per unit of risk</li>
+<li>Maximum drawdown</li>
+<li>Maximum drawdown duration</li>
+<li>Minimum asset value</li>
+</ul>
+<p>In tests involving expenses, the total actual expense is used as an indicator of living conditions.</p>
+<h2 id="performance-without-expense">Performance Without Expense</h2>
+<h3 id="sequential-periods_1">Sequential Periods</h3>
+<p>The longest analyzed period spans from 1935 to 2023, encompassing 90 years.
+Over this extended timeframe, a high equity allocation consistently delivers better returns compared to portfolios with lower equity exposure.
+However, during shorter periods, the performance of a 100% equity allocation is not significantly superior to more diversified approaches, particularly in times of heightened volatility.</p>
+<p>The years from 2000 to 2015 represent the most volatile period among the three tested intervals.
+In this timeframe, a pure equity allocation not only produced the lowest returns but also carried the highest risk.
+Interestingly, an all-bond allocation during this period did not result in the highest return or the lowest risk, indicating that both extreme allocations—whether fully in equities or entirely in bonds—fail to offer adequate diversification benefits.</p>
+<p>Across all periods, portfolios with diversified allocations, combining both equities and bonds, exhibited the lowest risk, particularly when analyzed using return-per-risk metrics.
+The 100% equity allocation consistently produced the worst return-per-risk ratio, while the 40% equity allocation performed the best, followed closely by portfolios with 20% and 60% equity allocations.</p>
+<p>This supports the popularity of the 60/40 portfolio—often advocated by books, financial articles, and advisors.
+The 60/40 allocation strikes a balance between different asset classes, offering a reasonable trade-off between return and risk.
+Its widespread endorsement is rooted in its ability to deliver stable and predictable results over various market conditions, making it a favored choice for long-term investors seeking both growth and protection.</p>
+<h4 id="1935-to-2023">1935 to 2023</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Equity</th>
+<th style="text-align: right;">Return</th>
+<th style="text-align: right;">Risk</th>
+<th style="text-align: right;">Return/Risk</th>
+<th style="text-align: right;">Max Drawdown</th>
+<th style="text-align: right;">Max Drawdown Dration</th>
+<th style="text-align: right;">Min Net Asset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">4.65%</td>
+<td style="text-align: right;">8.23%</td>
+<td style="text-align: right;">0.57</td>
+<td style="text-align: right;">21.46%</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">6.18%</td>
+<td style="text-align: right;">7.57%</td>
+<td style="text-align: right;">0.82</td>
+<td style="text-align: right;">17.87%</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">7.56%</td>
+<td style="text-align: right;">8.81%</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">17.91%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">8.79%</td>
+<td style="text-align: right;">11.35%</td>
+<td style="text-align: right;">0.77</td>
+<td style="text-align: right;">20.82%</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">9.87%</td>
+<td style="text-align: right;">14.52%</td>
+<td style="text-align: right;">0.68</td>
+<td style="text-align: right;">28.86%</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">10.80%</td>
+<td style="text-align: right;">17.99%</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">37.43%</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+</tbody>
+</table>
+<div id="asset-allocation-net-asset-growth-1935-2023-no-expense-container"></div>
+
+<div id="asset-allocation-risk-return-frontier-1935-2023-no-expense-container"></div>
+
+<h4 id="2000-to-2015">2000 to 2015</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Equity</th>
+<th style="text-align: right;">Return</th>
+<th style="text-align: right;">Risk</th>
+<th style="text-align: right;">Return/Risk</th>
+<th style="text-align: right;">Max Drawdown</th>
+<th style="text-align: right;">Max Drawdown Dration</th>
+<th style="text-align: right;">Min Net Asset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">5.99%</td>
+<td style="text-align: right;">8.99%</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">11.12%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">6.19%</td>
+<td style="text-align: right;">4.71%</td>
+<td style="text-align: right;">1.31</td>
+<td style="text-align: right;">3.71%</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">6.12%</td>
+<td style="text-align: right;">4.60%</td>
+<td style="text-align: right;">1.33</td>
+<td style="text-align: right;">2.56%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">5.78%</td>
+<td style="text-align: right;">8.81%</td>
+<td style="text-align: right;">0.66</td>
+<td style="text-align: right;">13.89%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">894329</td>
+</tr>
+<tr>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">5.15%</td>
+<td style="text-align: right;">13.84%</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">25.22%</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">752520</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">4.19%</td>
+<td style="text-align: right;">19.05%</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">37.43%</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">625723</td>
+</tr>
+</tbody>
+</table>
+<div id="asset-allocation-net-asset-growth-2000-2015-no-expense-container"></div>
+
+<div id="asset-allocation-risk-return-frontier-2000-2015-no-expense-container"></div>
+
+<h4 id="2000-to-2023">2000 to 2023</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Equity</th>
+<th style="text-align: right;">Return</th>
+<th style="text-align: right;">Risk</th>
+<th style="text-align: right;">Return/Risk</th>
+<th style="text-align: right;">Max Drawdown</th>
+<th style="text-align: right;">Max Drawdown Dration</th>
+<th style="text-align: right;">Min Net Asset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">3.89%</td>
+<td style="text-align: right;">9.25%</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">21.46%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">4.77%</td>
+<td style="text-align: right;">6.94%</td>
+<td style="text-align: right;">0.69</td>
+<td style="text-align: right;">17.87%</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">5.45%</td>
+<td style="text-align: right;">7.35%</td>
+<td style="text-align: right;">0.74</td>
+<td style="text-align: right;">17.91%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">5.93%</td>
+<td style="text-align: right;">10.15%</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">17.96%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">894329</td>
+</tr>
+<tr>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">6.18%</td>
+<td style="text-align: right;">13.97%</td>
+<td style="text-align: right;">0.44</td>
+<td style="text-align: right;">25.22%</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">752520</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">6.20%</td>
+<td style="text-align: right;">18.18%</td>
+<td style="text-align: right;">0.34</td>
+<td style="text-align: right;">37.43%</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">625723</td>
+</tr>
+</tbody>
+</table>
+<div id="asset-allocation-net-asset-growth-2000-2023-no-expense-container"></div>
+
+<div id="asset-allocation-risk-return-frontier-2000-2023-no-expense-container"></div>
+
+<h3 id="random-periods_1">Random Periods</h3>
+<p>Randomized tests reveal distinct patterns in investment metrics.
+First and foremost, annualized returns tend to benefit more from equity exposure as the investment time horizon lengthens.
+However, when investing for periods of 10, 20, or even 30 years, the return from a 100% equity portfolio is not significantly better than that of an 80/20 equity-to-bond allocation.
+This suggests that while equities generally drive long-term growth, a small portion of bonds can provide a more stable return without sacrificing much performance.</p>
+<p>A key observation, which holds across other metrics as well, is the instability of results over shorter timeframes.
+This is evident in the variability of returns, as demonstrated by the width of the bell curves for each time period.
+For instance, in a 10-year investment horizon, the return of a pure equity portfolio can range dramatically, from -10% to 30%.
+However, as the investment period extends to 40 years, the range narrows significantly, with returns typically falling between 2.5% and 17.5%.
+This highlights that, over longer durations, equity returns tend to become more predictable.
+Additionally, introducing bonds into the portfolio can further stabilize returns, mitigating the volatility seen with an all-equity approach.</p>
+<p>Risk follows a similar pattern to these findings from sequential period tests.
+As expected, the highest level of risk comes from an all-equity portfolio.
+However, contrary to what one might assume, the portfolio with the lowest risk is not the 100% bond allocation.
+Instead, diversified portfolios that combine equities and bonds effectively reduce risk.
+This supports the concept that diversification, by spreading exposure across multiple asset classes, plays a crucial role in risk mitigation.</p>
+<h4 id="annualized-return">Annualized Return</h4>
+<div id="asset-allocation-return-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-return-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-return-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-return-random-40-years-no-expense-container"></div>
+
+<h4 id="risk-standard-deviation">Risk (Standard Deviation)</h4>
+<div id="asset-allocation-risk-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-risk-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-risk-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-risk-random-40-years-no-expense-container"></div>
+
+<h4 id="return-per-risk">Return Per Risk</h4>
+<div id="asset-allocation-return-per-risk-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-40-years-no-expense-container"></div>
+
+<h4 id="max-drawdown">Max Drawdown</h4>
+<div id="asset-allocation-max-drawdown-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-40-years-no-expense-container"></div>
+
+<h4 id="max-drawdown-duration">Max Drawdown Duration</h4>
+<div id="asset-allocation-max-drawdown-duration-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-40-years-no-expense-container"></div>
+
+<h4 id="minimal-net-asset">Minimal Net Asset</h4>
+<div id="asset-allocation-minimal-net-asset-random-10-years-no-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-20-years-no-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-30-years-no-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-40-years-no-expense-container"></div>
+
+<h2 id="performance-with-expense">Performance With Expense</h2>
+<h3 id="sequential-periods_2">Sequential Periods</h3>
+<p>Now, let's explore how these portfolio metrics affect real-life financial outcomes.
+The new metric, "expense," represents how much money can be withdrawn from the portfolio over its lifetime.
+Simply put, the higher the expense amount, the better, as it allows for more spending without depleting the portfolio.</p>
+<p>Between 1935 and 2023, allocations ranging from 100% equity to 40% equity generated similar cash flows.
+Notably, the 80/20 portfolio (80% equity, 20% bonds) delivered almost the same cash flow as the 100% equity allocation, with a difference of less than 0.03%.
+This shows that reducing equity exposure slightly does not significantly impact the amount one can safely withdraw over time.</p>
+<p>However, during more volatile periods, such as from 2000 to 2015, higher equity allocations resulted in lower cash flows.
+The primary reason for this is that in a market downturn, expenses often need to be drastically reduced to preserve the portfolio's longevity.
+These reduced withdrawals also limit the portfolio’s ability to recover when the market rebounds, as less money remains invested to benefit from the recovery.</p>
+<p>The period from 2000 to 2023 presents a different picture, featuring strong growth following a major market crash.
+While a 100% equity portfolio produced a similar annualized return to the 80/20 portfolio, the cash flow generated by the all-equity portfolio was nearly 10% lower than that of the 80/20.
+This highlights that even when equities recover well, the ability to withdraw cash consistently may be hindered by the need to cut expenses during downturns.</p>
+<p>In this period, the 60/40 portfolio (60% equity, 40% bonds) once again demonstrated its strength as a well-balanced allocation, performing favorably in terms of both cash flow and overall risk-return trade-offs.</p>
+<h4 id="1935-to-2023_1">1935 to 2023</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Equity</th>
+<th style="text-align: right;">Return</th>
+<th style="text-align: right;">Risk</th>
+<th style="text-align: right;">Return/Risk</th>
+<th style="text-align: right;">Max Drawdown</th>
+<th style="text-align: right;">Max Drawdown Dration</th>
+<th style="text-align: right;">Min Net Asset</th>
+<th style="text-align: right;">Expense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0.47%</td>
+<td style="text-align: right;">7.90%</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: right;">49.55%</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">489732</td>
+<td style="text-align: right;">4177432</td>
+</tr>
+<tr>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">2.06%</td>
+<td style="text-align: right;">7.29%</td>
+<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">22.31%</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">934501</td>
+<td style="text-align: right;">9677595</td>
+</tr>
+<tr>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">4.57%</td>
+<td style="text-align: right;">8.76%</td>
+<td style="text-align: right;">0.52</td>
+<td style="text-align: right;">23.48%</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">952909</td>
+<td style="text-align: right;">11484190</td>
+</tr>
+<tr>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">7.07%</td>
+<td style="text-align: right;">11.34%</td>
+<td style="text-align: right;">0.62</td>
+<td style="text-align: right;">31.63%</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">957867</td>
+<td style="text-align: right;">11770148</td>
+</tr>
+<tr>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">8.61%</td>
+<td style="text-align: right;">14.44%</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">39.56%</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">947777</td>
+<td style="text-align: right;">11803908</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">9.76%</td>
+<td style="text-align: right;">17.87%</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">47.30%</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">919102</td>
+<td style="text-align: right;">11807333</td>
+</tr>
+</tbody>
+</table>
+<div id="asset-allocation-net-asset-growth-1935-2023-with-expense-container"></div>
+
+<div id="asset-allocation-risk-return-frontier-1935-2023-with-expense-container"></div>
+
+<h4 id="2000-to-2015_1">2000 to 2015</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Equity</th>
+<th style="text-align: right;">Return</th>
+<th style="text-align: right;">Risk</th>
+<th style="text-align: right;">Return/Risk</th>
+<th style="text-align: right;">Max Drawdown</th>
+<th style="text-align: right;">Max Drawdown Dration</th>
+<th style="text-align: right;">Min Net Asset</th>
+<th style="text-align: right;">Expense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.75%</td>
+<td style="text-align: right;">8.63%</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">14.68%</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">960000</td>
+<td style="text-align: right;">842156</td>
+</tr>
+<tr>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">1.94%</td>
+<td style="text-align: right;">4.53%</td>
+<td style="text-align: right;">0.43</td>
+<td style="text-align: right;">7.56%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">960000</td>
+<td style="text-align: right;">794206</td>
+</tr>
+<tr>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">1.88%</td>
+<td style="text-align: right;">4.42%</td>
+<td style="text-align: right;">0.42</td>
+<td style="text-align: right;">8.87%</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">893467</td>
+<td style="text-align: right;">736243</td>
+</tr>
+<tr>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">1.55%</td>
+<td style="text-align: right;">8.46%</td>
+<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">20.88%</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">759595</td>
+<td style="text-align: right;">669737</td>
+</tr>
+<tr>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">0.95%</td>
+<td style="text-align: right;">13.29%</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">34.28%</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">630935</td>
+<td style="text-align: right;">596647</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0.03%</td>
+<td style="text-align: right;">18.29%</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">50.04%</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">479636</td>
+<td style="text-align: right;">519342</td>
+</tr>
+</tbody>
+</table>
+<div id="asset-allocation-net-asset-growth-2000-2015-with-expense-container"></div>
+
+<div id="asset-allocation-risk-return-frontier-2000-2015-with-expense-container"></div>
+
+<h4 id="2000-to-2023_1">2000 to 2023</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Equity</th>
+<th style="text-align: right;">Return</th>
+<th style="text-align: right;">Risk</th>
+<th style="text-align: right;">Return/Risk</th>
+<th style="text-align: right;">Max Drawdown</th>
+<th style="text-align: right;">Max Drawdown Dration</th>
+<th style="text-align: right;">Min Net Asset</th>
+<th style="text-align: right;">Expense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">-0.27%</td>
+<td style="text-align: right;">8.88%</td>
+<td style="text-align: right;">-0.03</td>
+<td style="text-align: right;">34.39%</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">903036</td>
+<td style="text-align: right;">1208772</td>
+</tr>
+<tr>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">0.58%</td>
+<td style="text-align: right;">6.67%</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">22.68%</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">960000</td>
+<td style="text-align: right;">1212533</td>
+</tr>
+<tr>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">1.23%</td>
+<td style="text-align: right;">7.06%</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">21.20%</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">893467</td>
+<td style="text-align: right;">1195911</td>
+</tr>
+<tr>
+<td style="text-align: right;">60%</td>
+<td style="text-align: right;">1.69%</td>
+<td style="text-align: right;">9.75%</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">21.24%</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">759595</td>
+<td style="text-align: right;">1154907</td>
+</tr>
+<tr>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">1.95%</td>
+<td style="text-align: right;">13.43%</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">34.28%</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">630935</td>
+<td style="text-align: right;">1083698</td>
+</tr>
+<tr>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">1.96%</td>
+<td style="text-align: right;">17.47%</td>
+<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">50.04%</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">479636</td>
+<td style="text-align: right;">988486</td>
+</tr>
+</tbody>
+</table>
+<div id="asset-allocation-net-asset-growth-2000-2023-with-expense-container"></div>
+
+<div id="asset-allocation-risk-return-frontier-2000-2023-with-expense-container"></div>
+
+<h3 id="random-periods_2">Random Periods</h3>
+<p>The findings from random-period tests that include the "expense" metric reinforce the conclusions drawn from sequential-period analyses, as well as those from random periods without considering expenses.
+These tests consistently demonstrate the resilience of certain portfolio allocations across varying market conditions.</p>
+<p>When focusing on the expense metric, portfolios with equity allocations ranging from 40% to 100% provide similar cash flows across all investment time horizons.
+This suggests that, in terms of spending potential, higher equity exposure does not dramatically improve outcomes compared to more balanced portfolios.
+A diversified portfolio, such as the ones with 40% to 60% equity, not only delivers comparable cash flows but also offers another crucial advantage: a higher minimal net asset value.</p>
+<p>This higher minimal net asset value means that the portfolio maintains a larger financial cushion, which in turn reduces the risk of fully depleting the investment over time.
+By preserving more capital during downturns, these diversified portfolios are better positioned to sustain withdrawals without running the risk of draining assets entirely.
+This reduced risk makes diversified allocations like 40/60 or 60/40 especially appealing for long-term investors who seek both reliable cash flow and financial security.</p>
+<h4 id="annualized-return_1">Annualized Return</h4>
+<div id="asset-allocation-return-random-10-years-expense-container"></div>
+<div id="asset-allocation-return-random-20-years-expense-container"></div>
+<div id="asset-allocation-return-random-30-years-expense-container"></div>
+<div id="asset-allocation-return-random-40-years-expense-container"></div>
+
+<h4 id="risk-standard-deviation_1">Risk (Standard Deviation)</h4>
+<div id="asset-allocation-risk-random-10-years-expense-container"></div>
+<div id="asset-allocation-risk-random-20-years-expense-container"></div>
+<div id="asset-allocation-risk-random-30-years-expense-container"></div>
+<div id="asset-allocation-risk-random-40-years-expense-container"></div>
+
+<h4 id="return-per-risk_1">Return Per Risk</h4>
+<div id="asset-allocation-return-per-risk-random-10-years-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-20-years-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-30-years-expense-container"></div>
+<div id="asset-allocation-return-per-risk-random-40-years-expense-container"></div>
+
+<h4 id="max-drawdown_1">Max Drawdown</h4>
+<div id="asset-allocation-max-drawdown-random-10-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-20-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-30-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-random-40-years-expense-container"></div>
+
+<h4 id="max-drawdown-duration_1">Max Drawdown Duration</h4>
+<div id="asset-allocation-max-drawdown-duration-random-10-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-20-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-30-years-expense-container"></div>
+<div id="asset-allocation-max-drawdown-duration-random-40-years-expense-container"></div>
+
+<h4 id="minimal-net-asset_1">Minimal Net Asset</h4>
+<div id="asset-allocation-minimal-net-asset-random-10-years-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-20-years-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-30-years-expense-container"></div>
+<div id="asset-allocation-minimal-net-asset-random-40-years-expense-container"></div>
+
+<h4 id="expense">Expense</h4>
+<div id="asset-allocation-expense-random-10-years-expense-container"></div>
+<div id="asset-allocation-expense-random-20-years-expense-container"></div>
+<div id="asset-allocation-expense-random-30-years-expense-container"></div>
+<div id="asset-allocation-expense-random-40-years-expense-container"></div></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright 2024 MoneyWaffle.com. All rights reserved. Please <a href="mailto:support@moneywaffle.com">contact us</a> for more information.</small><br>
+            
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../scripts/default.js"></script>
+    <script src="../../scripts/load_scripts.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
