@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>管理投资组合 - Money Waffle</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../../css/highcharts.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Money Waffle</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">MoneyWaffle</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">金融与投资 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">实践中的投资组合管理</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../%E7%9B%AE%E5%BD%95/">目录</a>
+</li>
+
+        
+            
+<li >
+    <a href="../%E5%89%8D%E8%A8%80/">前言</a>
+</li>
+
+        
+            
+<li >
+    <a href="../%E7%AE%80%E4%BB%8B/">简介</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">管理投资组合</a>
+</li>
+
+        
+            
+<li >
+    <a href="../%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%90%86%E8%AE%BA/">投资组合理论</a>
+</li>
+
+        
+            
+<li >
+    <a href="../%20%E8%A1%A1%E9%87%8F%E5%9B%9E%E6%8A%A5/">衡量回报</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">金融市场指南</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E7%9B%AE%E5%BD%95/">目录</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E9%87%8D%E8%A6%81/">为什么金融市场重要</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E5%A4%96%E6%B1%87%E5%B8%82%E5%9C%BA/">外汇市场</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E8%B4%A7%E5%B8%81%E5%B8%82%E5%9C%BA/">货币市场</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E5%80%BA%E5%88%B8%E5%B8%82%E5%9C%BA/">债券市场</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../%E7%AE%80%E4%BB%8B/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%90%86%E8%AE%BA/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#_1">管理投资组合</a></li>
+            <li class="second-level"><a href="#_2">限制条件</a></li>
+                
+                <li class="third-level"><a href="#_3">资源</a></li>
+                <li class="third-level"><a href="#_4">税收状况</a></li>
+                <li class="third-level"><a href="#_5">流动性需求</a></li>
+                <li class="third-level"><a href="#_6">时间跨度</a></li>
+                <li class="third-level"><a href="#_7">特殊情况</a></li>
+            <li class="second-level"><a href="#_8">投资者类型</a></li>
+                
+                <li class="third-level"><a href="#_9">散户投资者</a></li>
+                <li class="third-level"><a href="#_10">机构投资者</a></li>
+                <li class="third-level"><a href="#_11">银行</a></li>
+                <li class="third-level"><a href="#_12">保险公司</a></li>
+                <li class="third-level"><a href="#_13">养老金基金</a></li>
+                <li class="third-level"><a href="#_14">基金管理公司</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="_1">管理投资组合</h1>
+<p><em>回到<a href="../%E7%9B%AE%E5%BD%95/">目录</a></em></p>
+<p>投资者在投资中能做出的最重要决策之一是他或她愿意承受的风险水平。大多数投资者希望以最低的风险获得最高的回报。然而，风险和回报之间通常存在权衡关系，较高的回报通常伴随着较大的风险。因此，投资组合经理需要确定客户的风险承受能力，这是一个关键问题。然而，这并不总是容易实现，因为对风险的态度因人而异，有时难以表达清楚。风险的概念往往难以定义和衡量。尽管如此，投资组合经理必须考虑为客户推荐或建立的投资组合的风险水平。</p>
+<p>本章讨论了投资者面临的一些限制条件。关于风险的分析将在下一章中详细说明。此外，本章还回顾了资金管理业务中的主要参与者。在美国和英国等国家，投资机构至少管理并持有50%的债券和股票市场，因此，这些机构集体对资金管理行业具有重要影响，甚至可能影响股票和债券价格以及公司政策。不同国家中某类机构资金管理者的重要性可能有所不同。最后，本章介绍了这些参与者可用的最重要的投资工具。</p>
+<h2 id="_2">限制条件</h2>
+<p>管理客户投资组合是一个复杂的过程。除了评估客户的风险偏好，投资组合经理还必须考虑其他因素，例如投资者的税收状况、投资工具的类型、客户的资源、流动性需求以及投资的时间跨度。</p>
+<h3 id="_3">资源</h3>
+<p>投资者面临的一个显而易见的限制是可用于投资的资源量。许多投资和投资策略都有最低要求。例如，在美国开设保证金账户可能需要至少几千美元。此外，投资对冲基金可能仅限于净资产超过一百万美元的个人，并且通常要求最低投资额达数十万美元。投资策略需要考虑资源的最小和最大限制。</p>
+<h3 id="_4">税收状况</h3>
+<p>为了实现合理的财务规划和投资，投资者和投资经理必须考虑税收问题。在某些情况下，例如英国的养老基金，这些基金完全免税。对于这些免税基金，经理应尽量避免那些在源头扣税的股票。尽管这些基金可能能够追回扣除的税款，但它们可能会因失去本应获得的利息或回报而产生机会成本。</p>
+<p>投资者需要权衡投资于免税基金和全额纳税基金之间的利弊。例如，免税基金可能有流动性限制，这意味着投资者在数年内可能无法从基金中提取资金而不支付税收罚金。</p>
+<p>投资者的税收状况同样重要。处于较高税收类别的投资者会寻求税收待遇有利的投资策略，而免税投资者会更关注税前回报。</p>
+<h3 id="_5">流动性需求</h3>
+<p>有时，投资者可能希望投资于能够在需要时轻松获取现金的投资产品。例如，投资者可能计划在未来12个月内购买一处房产，因此需要快速获得资金。在为特定客户决定适合的投资产品类型时，必须将流动性需求考虑在内。此外，任何基金都需要有应对变化情况的能力，因此必须在基金中内置一定程度的流动性。高流动性的股票或固定收益工具可以确保投资组合的一部分能够在需要时快速转化为现金，而无需在价格上做出重大让步。</p>
+<h3 id="_6">时间跨度</h3>
+<p>投资时间跨度较长的投资者可以投资于长期投资的基金，并更有可能承受更高的风险，因为某一年表现较差的回报很可能会被基金到期前未来几年的高回报抵消。短期投资的基金可能无法承担这种风险，因此回报率可能较低。基金投资的证券类型将受到时间跨度限制的影响，而投资者选择的基金类型也将由其投资时间跨度决定。</p>
+<h3 id="_7">特殊情况</h3>
+<p>除了上述限制条件外，投资者还可能有特殊情况或要求，这些都会影响其投资选择范围。例如，投资者的抚养人数及其需求因人而异。有些投资者需要为一个或多个孩子的学费或大学费用提前规划。这类投资者更适合某些特定的投资产品。其他投资者可能只愿意投资于社会责任基金；还有一些投资者，如企业内部人士或政治公职人员，可能在法律上受到投资选择的限制。</p>
+<h2 id="_8">投资者类型</h2>
+<p>投资者主要分为散户投资者和机构投资者。散户投资者是拥有储蓄的私人个体，而机构投资者则包括银行、养老金基金和保险公司。</p>
+<h3 id="_9">散户投资者</h3>
+<p>许多散户投资者缺乏时间、技能或信息渠道来评估各种投资机会，并以最有效的方式管理他们的资金（尽管随着互联网上金融和公司信息的广泛可用，越来越多的个人开始自行管理其财务）。实际上，少数个人能够积累足够的资金来建立一个适当分散风险的投资组合。因此，各种专业中介或中间机构开发了适合散户投资者的投资产品和服务。这些机构包括小型的独立财务顾问公司（IFAs），它们根据从大型金融机构获取的佣金为投资者提供投资建议，以及银行、寿险公司、基金管理集团和股票经纪公司等大型机构。</p>
+<p>通过将散户投资者的资金集中到各种集体投资计划中，这些中介机构可以：</p>
+<ul>
+<li>在相对较低的风险水平下提供良好的回报；</li>
+<li>利用全职专业基金经理的服务，他们可以获取最新的信息；</li>
+<li>在资金管理和行政管理上实现规模经济；</li>
+<li>通过投资于大规模、分散的投资组合来降低风险；</li>
+<li>根据具体产品，提供合理的流动性，使投资者可以轻松买入或卖出投资产品。</li>
+</ul>
+<p>高净值个人通常有更多的投资选择，并能获得专业的资金管理服务。专业管理散户资金或私人客户基金的机构可以提供以下服务：</p>
+<ul>
+<li>仅执行服务：不向客户提供任何建议，仅为客户提供买卖证券或资产的渠道，并收取佣金。通常，具有时间和专业知识的经验丰富的投资者会选择这种方式。</li>
+<li>咨询交易服务：由股票经纪人代表客户执行交易，同时提供必要的交易建议。</li>
+<li>投资组合咨询服务：股票经纪人评估客户的整体财务状况和需求，提供关于投资组合构建和投资策略的建议，但最终由客户决定是否执行该策略。</li>
+<li>投资组合全权委托服务：股票经纪人完全负责客户的投资组合，根据市场状况和预先约定的限制，自主买卖资产。</li>
+</ul>
+<p>私人客户基金的目标和结构将根据客户的需求和具体情况而有所不同。通常，年轻客户由于其较长的投资时间跨度，能够承受更高的风险；而退休客户可能倾向于降低风险以保全本金并获得稳定收入。例如，年轻的散户投资者可能需要与寿险挂钩的储蓄产品以实现购房目标，而年长的投资者可能会寻求高收益国债或某些与股票相关的产品，以在退休期间提供收入并对抗通货膨胀。</p>
+<h3 id="_10">机构投资者</h3>
+<p>类似于散户或私人客户，许多机构或公司（无论大小）可以将其自有资金、公司养老金计划或客户投资组合的管理外包给第三方。机构客户对于专业资金管理机构具有特别的吸引力，因为他们通常代表着与长期客户的大额资产关系。</p>
+<p>为机构客户提供的服务范围从仅执行服务到完全全权委托服务。机构投资者还包括慈善组织以及某些大学、学院和教会委员会等机构。</p>
+<p>将资金管理外包给外部机构促进了咨询业务的发展。咨询顾问作为中介，帮助机构选择合适的外部资金管理者。这一过程通常包括评估潜在资金管理者的投资理念、风格、费用结构、过往业绩、人员和系统。竞争业务的金融机构通常需要填写问卷并向外包公司做演示。咨询顾问会帮助制定评估标准，并为客户总结各个候选者的优劣点。最终，由外包公司选择管理其资金的机构，这些机构成为其机构客户。</p>
+<h3 id="_11">银行</h3>
+<p>银行和建筑协会的核心业务是吸收存款并以更高的利率贷款。为了优化这些存款的回报，银行会投资于各种货币市场和债务工具，包括短期国库券、存单、国债和债券，每种工具具有不同的到期期限和流动性。由于通常期限越长利率越高，银行会运用复杂技术来创建期望的投资组合并有效管理其资产和负债。</p>
+<p>许多银行还为其散户客户提供投资组合管理服务。在利率较低且股市指数上涨的时期，散户投资者可能选择将部分储蓄投资于单位信托而非存款账户。管理高净值个人资金（财富管理）是银行的一个增长领域，银行也可以为机构客户提供资金管理服务。在欧洲，投资管理被认为是银行的增长业务之一。</p>
+<h3 id="_12">保险公司</h3>
+<p>保险公司的业务核心是承保风险。保险公司通过收取保单持有人按照约定时间支付的保费，承诺在特定事件发生时支付预定金额。保费在索赔发生之前进行投资。</p>
+<p>保险公司的活动可分为两类：一般保险业务和寿险业务。一般保险业务为特定的意外风险提供保险，如火灾、事故和机动车保险。这类保险的期限通常为一年，其负债通常为短期性质，因此大部分资金被投资于现金和短期债务工具，剩余部分则投资于股票以实现长期增长。</p>
+<p>寿险和长期健康保险主要涉及长期业务。客户支付的保费用于投资，并在索赔发生或保单到期时支付。寿险产品包括定期寿险、终身寿险和分红险。这些产品的特点决定了保险公司在投资时会注重长期增长，以对抗通货膨胀。</p>
+<h3 id="_13">养老金基金</h3>
+<p>养老金基金是为支付退休金而设立的资金。雇主通常设立养老金计划以吸引和留住员工，也可能由地方议会、工会或私人个人设立。养老金基金的管理可能部分或全部委托给基金管理公司、银行或保险公司。养老金基金通常有较长的时间跨度，可以承担更多风险，从而投资于股票和房地产等稍具投机性的资产。</p>
+<h3 id="_14">基金管理公司</h3>
+<p>基金管理公司是另一类重要的投资管理参与者。这些公司可以是银行的子公司、经纪公司的一部分，或独立公司，为散户和机构投资者（包括养老金基金、保险公司和慈善组织）提供资金管理服务。</p>
+<p>某些机构投资者可能自行雇佣基金经理，将其投资组合的专业部分（如日本股票、私募股权或新兴市场）外包给专业基金管理公司。中小型养老金基金通常完全将资金管理职责外包给基金管理公司。</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright 2024 MoneyWaffle.com. All rights reserved. Please <a href="mailto:support@moneywaffle.com">contact us</a> for more information.</small><br>
+            
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../scripts/default.js"></script>
+    <script src="../../../scripts/load_scripts.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
