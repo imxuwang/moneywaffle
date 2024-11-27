@@ -14,12 +14,21 @@ plugins:
   # - md-to-html
   - search
   - minify
-  - mkdocs-nav-weight:
-      section_renamed: true
-      index_weight: -10
-      warning: true
-      reverse: false
-      headless_included: false
+  # - mkdocs-nav-weight:
+  #     section_renamed: true
+  #     index_weight: -10
+  #     warning: true
+  #     reverse: false
+  #     headless_included: false
+
+nav:
+  - Home: index.md
+  - 经济: '#'
+  - 金融:
+    - 金融市场指南: finance/金融市场指南/目录.md
+  - 投资:
+    - 实践中的投资组合管理: investment/实践中的投资组合管理/目录.md
+  - EN: '/'
 
 extra_javascript:
   - https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
