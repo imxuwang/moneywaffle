@@ -1,37 +1,24 @@
 site_name: Money Waffle
 theme:
-  # name: terminal
   name: cinder
-  # name: material
-  # name: simple-blog
-  # name: bootstrap386
-  # name: topdf
   font:
     text: Lora
-    # text: 'Noto Serif'
     code: Mulish
 plugins:
-  # - md-to-html
   - search
   - minify
-  # - mkdocs-nav-weight:
-  #     section_renamed: true
-  #     index_weight: -10
-  #     warning: true
-  #     reverse: false
-  #     headless_included: false
 
 nav:
   - Home: index.md
-  - Weekly: weekly/content.md
-  - Economy: '#'
-  - Investment:
-    - 'Asset allocation analysis for two asset classes: equity and bond': investment/asset-allocation.md
-  - History:
-    - 'The unchanging and the ever-changing': 'history/The unchanging and the ever-changing/content.md'
-    - They are in Siam: history/they_are_in_siam.md
+  - 週刊: 'weekly/content.md'
+  # - 经济: 'economy/content.md'
+  # - 金融:
+  #   - 金融市场指南: finance/金融市场指南/目录.md
+  #   - 亚洲金融危机 1995 - 1998: finance/亚洲金融危机1995_1998/content.md
+  # - 投资:
+  #   - 实践中的投资组合管理: investment/实践中的投资组合管理/目录.md
+  - EN: '/'
   - CN: '/cn'
-  - JP: '/jp'
 
 extra_javascript:
   - https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js

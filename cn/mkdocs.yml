@@ -31,6 +31,7 @@ nav:
   - 投资:
     - 实践中的投资组合管理: investment/实践中的投资组合管理/目录.md
   - EN: '/'
+  - JP: '/jp'
 
 extra_javascript:
   - https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js

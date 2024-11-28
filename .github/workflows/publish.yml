@@ -45,9 +45,11 @@ jobs:
         run: |
           mkdocs build
           mkdocs build -f cn/mkdocs.yml
+          mkdocs build -f jp/mkdocs.yml
       - name: Move files to temp dir
         run: |
           mv cn/site site/cn
+          mv jp/site site/jp
           mv site $TEMP_DIR
       - name: Push to target branch
         run: |
