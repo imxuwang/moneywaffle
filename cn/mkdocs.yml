@@ -23,6 +23,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - 周报: 'weekly/content.md'
   - 经济: 'economy/content.md'
   - 金融:
     - 金融市场指南: finance/金融市场指南/目录.md
