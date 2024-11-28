@@ -37,10 +37,10 @@ The long history of China has continued and developed through their mutual influ
         1. [The Two Capitals of the Sui and Tang Dynasties](./part_1_ch_2_sec_3.md)
         1. [The Dual Capitals of the Ming Dynasty](./part_1_ch_2_sec_4.md)
     1. Chapter 3: Infrastructure / Connections and Divisions of the Land
-        1. The Great Wall: More Than Just Military Defense
-        1. The Lifeline of Grain Supply—The Grand Canal
-        1. The Ancient Transportation Network—Post Roads
-        1. Relay Stations Corroded by Corruption
+        1. [The Great Wall: More Than Just Military Defense](part_1_ch_3_sec_1.md)
+        1. [The Lifeline of Grain Supply—The Grand Canal](part_1_ch_3_sec_2.md)
+        1. [The Ancient Transportation Network—Post Roads](part_1_ch_3_sec_3.md)
+        1. [Relay Stations Corroded by Corruption](part_1_ch_3_sec_4.md)
 1. Part II: The Flesh and Blood of Ancient China
     1. Introduction: Place of origin and birthplace: Where are you from?
     1. Chapter 4: Migration / Where We Came From and Where We Stayed
