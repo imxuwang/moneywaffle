@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+    
+    <title>指数 - Money Waffle</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../../css/base.min.css" rel="stylesheet">
+    <link href="../../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+    <link href="../../../css/highcharts.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../../..">Money Waffle</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../economy/content/">经济</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">金融 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../finance/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E6%8C%87%E5%8D%97/%E7%9B%AE%E5%BD%95/">金融市场指南</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../finance/%E4%BA%9A%E6%B4%B2%E9%87%91%E8%9E%8D%E5%8D%B1%E6%9C%BA1995_1998/content/">亚洲金融危机 1995 - 1998</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">投资 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../%E7%9B%AE%E5%BD%95/">实践中的投资组合管理</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="/">EN</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#_1">指数</a></li>
+            <li class="second-level"><a href="#_2">指数的重要性</a></li>
+                
+            <li class="second-level"><a href="#_3">价格加权指数</a></li>
+                
+                <li class="third-level"><a href="#_4">算术指数</a></li>
+                <li class="third-level"><a href="#_5">再基准化指数</a></li>
+                <li class="third-level"><a href="#_6">其他考虑因素</a></li>
+                <li class="third-level"><a href="#_7">几何指数</a></li>
+            <li class="second-level"><a href="#_8">市值加权指数</a></li>
+                
+                <li class="third-level"><a href="#_9">拉斯佩尔指数</a></li>
+                <li class="third-level"><a href="#_10">帕谢指数</a></li>
+                <li class="third-level"><a href="#_11">拉斯佩尔指数与帕谢指数的比较</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="_1">指数</h1>
+<p><em>回到<a href="../%E7%9B%AE%E5%BD%95/">目录</a></em></p>
+<h2 id="_2">指数的重要性</h2>
+<p>指数具有多重重要性。实际上，它们提供了经济表现的总体衡量标准。例如，在经济衰退期间，股市持续上涨是很不常见的。正如前面提到的，指数常用于评估基金经理所管理基金的表现。同样，一些基金试图复制指数，并提供与其模仿的指数相同的回报。分析师使用指数来评估市场的整体方向，指数也用于估算统计参数，如贝塔值。此外，指数可以作为各种衍生证券的基础。</p>
+<p>指数的有效性取决于以下因素：</p>
+<ol>
+<li>覆盖的市场</li>
+<li>指数中包含的证券类型</li>
+<li>包含的证券数量</li>
+<li>指数的计算方法</li>
+<li>指数如何随着时间的推移对证券变化（如收购）进行调整</li>
+</ol>
+<p>其中一些因素相对简单明了。一些指数专注于特定的行业或领域，而其他指数则专注于市场或国家。此外，一些指数的股票数量较少，而其他指数则包含大量股票——例如美国的Wilshire 5000总市场指数，它由超过5000家公司组成。指数的计算方法和随着时间的推移如何调整并不一定是简单明了的。构建指数的方法有多种。</p>
+<p>因此，理解不同的指数计算方法非常重要。这里，我们将探讨简单的算术指数、几何指数和市值加权指数。根据采用的基金管理策略，定期的指数再平衡可能会影响投资组合的投资决策。例如，直接跟踪指数的投资组合将在指数发生变化的当天买入或卖出证券，以匹配重新平衡后指数的新组成部分和权重。相比基准承担更多风险的投资组合，可能会在再平衡日期前预测再平衡效应，并相应地调整其投资组合，以获得额外的表现。</p>
+<p>总的来说，投资组合经理和其他投资者可以使用指数来监控市场的水平，并利用这些信息来把握投资决策时机。可以创建专门的指数来监控与尚未报价的指数相比的基金表现。</p>
+<p>相对价格的概念巩固了指数计算的基础。任何股票的价格可以通过比较其在时间点 <script type="math/tex"> t </script> （即 <script type="math/tex"> P_t </script> ）的价格与某个较早基准日期 <script type="math/tex"> t_0 </script> （即 <script type="math/tex"> P_0 </script> ）的价格来监控。因此，<script type="math/tex"> \frac{P_t}{P_0} </script> 被称为价格相对计算（<script type="math/tex"> P_0 </script> 必须调整资本变动，如股票分红或配股）。指数通过观察一系列成分股随时间的相对价格变化来进行计算。</p>
+<p>相对基准日期的百分比变化可以通过以下公式计算：
+<script type="math/tex; mode=display">
+\text{百分比变化} = \frac{P_t - P_0}{P_0}
+</script>
+</p>
+<p>而在两个时间点之间的百分比点变动的计算公式则为：
+<script type="math/tex; mode=display">
+\text{百分比点变动} = P_t - P_0
+</script>
+</p>
+<p>这两种度量方式不应混淆，因为它们是完全不同的。</p>
+<p>指数可以分为价格加权和市值加权两种类型。在价格加权指数中，证券在指数中的权重与其价格成比例。而在市值加权指数中，证券在指数中的权重与其公司总市值成比例。</p>
+<h2 id="_3">价格加权指数</h2>
+<p>有时，价格加权指数被认为是等权重的，因为该指数对每个成分股分配相同的权重。每只股票在指数中的影响力是相等的。</p>
+<h3 id="_4">算术指数</h3>
+<p>简单的算术指数通过从基准值100（尽管可以选择其他基准值）开始，计算一系列股票的平均价格，然后将所有相关成分股的价格加在一起，再除以基准日期时成分股价格的总和：</p>
+<p>
+<script type="math/tex; mode=display">
+\text{算术指数} = \frac{\text{基准指数值} \times \text{当前值总和}}{\text{基准值总和}}
+</script>
+</p>
+<p>考虑以下关于A和B股票的简单算术指数计算示例：</p>
+<table>
+<thead>
+<tr>
+<th>时间周期</th>
+<th>股票A价格</th>
+<th>股票B价格</th>
+<th>指数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>100</td>
+<td>100</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>113</td>
+<td>90</td>
+<td>101.5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>120</td>
+<td>85</td>
+<td>102.5</td>
+</tr>
+<tr>
+<td>3</td>
+<td>110</td>
+<td>60</td>
+<td>85.0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>90</td>
+<td>0</td>
+<td>45.0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>时间0的指数值：<script type="math/tex">\frac{100 \times (100 + 100)}{100 + 100} = 100</script>
+</li>
+<li>时间2的指数值：<script type="math/tex">\frac{100 \times (120 + 85)}{100 + 100} = 102.5</script>
+</li>
+</ul>
+<p>当股票B的价格在时间4降至0时，指数值变为A股票价值的一半。</p>
+<p>算术指数是衡量投资组合表现最合适的替代方法，因为投资组合的回报将是组成股的回报总和。简单的综合价格指数的例子包括道琼斯工业平均指数和日经股票指数。</p>
+<h3 id="_5">再基准化指数</h3>
+<p>有时，指数会重新基准化或设置为新的基准值。为此，使用以下公式：
+<script type="math/tex; mode=display">
+\text{再基准化后的指数值} = 100 \times \frac{\text{时间t时的指数值}}{\text{重新基准化时的指数值}}
+</script>
+</p>
+<p>如果将前面例子中的系列进行再基准化，设定时间2的指数值为100，则需要将每个指数观察值除以102.5，并将这些值乘以100：</p>
+<table>
+<thead>
+<tr>
+<th>时间周期</th>
+<th>指数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>
+<script type="math/tex">\frac{100.0}{102.5} \times 100 = 97.56</script>
+</td>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<script type="math/tex">\frac{101.5}{102.5} \times 100 = 99.02</script>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+<script type="math/tex">\frac{102.5}{102.5} \times 100 = 100.0</script>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+<script type="math/tex">\frac{85.0}{102.5} \times 100 = 82.93</script>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>
+<script type="math/tex">\frac{45.0}{102.5} \times 100 = 43.90</script>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">其他考虑因素</h3>
+<p>使用简单的算术指数时，必须考虑股票拆分、股息和其他影响股票变化的因素。例如，在一个2比1的股票拆分中，所有当前股东将为每股旧股收到两股新股。公司的总价值没有改变，但股票数量增加了两倍，每股的价值降为原来的两倍。由于股票价格下跌，价格加权指数会下降，尽管从经济意义上讲并没有发生任何变化。对于价格加权指数，这个问题可以通过在每次拆分时调整除数来解决。改变除数调整了指数，使其能够继续反映基础证券的实际价值。如前所述，道琼斯工业平均指数是30只美国工业股的价格加权平均数。最初，除数是30，但随着时间的推移，除数已根据股票拆分和股息调整，现在只是一个小分数。</p>
+<p>价格加权指数的一个优点是，通过购买相同数量的每只股票，可以相对简单地复制该指数的回报率。这对于那些试图实现与指数相似回报的基金非常有用。然而，指数对高价股票的偏倚并没有好的理由，因为股票价格可以通过拆分来操控。高价股票在拆分后价格下降，突然变得不再那么具有影响力。因此，市值加权指数应运而生，以解决这一问题。然而，这两种类型的指数可能会出现一个问题——指数陈旧性，当股票不是每天都交易时会出现此问题。如果指数中的股票最近没有交易，指数未必反映出所有当前的价格信息。指数陈旧性主要出现在由大量证券组成的指数中，或者包含一些较小市值或不太活跃的股票的指数中。</p>
+<h3 id="_7">几何指数</h3>
+<p>创建指数的另一种方法是几何指数。该指数是通过以下方式创建的：</p>
+<p>
+<script type="math/tex; mode=display">
+\text{几何指数} = \text{基准指数值} \times \frac{\text{当前值的乘积}}{\text{基准值的乘积}}
+</script>
+</p>
+<p>继续之前的例子，计算A和B股票在四个时间周期中的几何指数值：</p>
+<table>
+<thead>
+<tr>
+<th>时间周期</th>
+<th>股票A价格</th>
+<th>股票B价格</th>
+<th>算术指数</th>
+<th>几何指数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>100</td>
+<td>100</td>
+<td>100.0</td>
+<td>100.00</td>
+</tr>
+<tr>
+<td>1</td>
+<td>113</td>
+<td>90</td>
+<td>101.5</td>
+<td>100.85</td>
+</tr>
+<tr>
+<td>2</td>
+<td>120</td>
+<td>85</td>
+<td>102.5</td>
+<td>101.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>110</td>
+<td>60</td>
+<td>85.0</td>
+<td>81.24</td>
+</tr>
+<tr>
+<td>4</td>
+<td>90</td>
+<td>0</td>
+<td>45.0</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+<p>因此，时间1的几何指数值为：
+<script type="math/tex; mode=display">
+\text{几何指数} = 100 \times \frac{(113 \times 90)}{(100 \times 100)} = 100.85
+</script>
+</p>
+<p>与简单的算术指数不同，几何指数不反映等权重股票投资组合的价值。例如，当股票B的价格降至0时，几何指数的值也降为0。</p>
+<p>使用几何指数时有一些进一步的陷阱：
+1. 这种类型的指数往往低估相对于等权重算术指数的表现，因为它对大幅上涨的价格不敏感，而对大幅下跌的价格更敏感。
+2. 几何指数不太可能代表可实现的表现，因为投资组合的回报是成分股回报的总和，而不是乘积，因此将其作为基准并不明智。它的值总是小于或等于其成分股等权重投资组合的值。</p>
+<p>FT30股指是一个等权重的几何指数的例子。该指数基于30只在伦敦证券交易所上市的大型股票，旨在反映英国经济的特征。</p>
+<h2 id="_8">市值加权指数</h2>
+<p>等权重指数并不一定能够准确反映市场价值随着其成分变化的变化。当资产的市场资本化变化时，等权重指数通常会给市值较小的资产的价格变化过多权重，而对市值较大的资产的价格变化则权重过小（相对而言）。例如，一家非常小公司的股价变动1%与一家非常大公司的股价变动1%被赋予相同的权重。为了解决这些问题，计算了市值加权的算术价格指数。  </p>
+<p>关于加权数量需要考虑的问题包括：</p>
+<ul>
+<li>对原始数量进行加权，适用于原始和当前价格；</li>
+<li>对当前数量进行加权，适用于原始和当前价格；</li>
+<li>对原始价格使用原始数量进行加权，对当前价格使用当前数量进行加权；</li>
+<li>平均价格相对指数（即等权重）。</li>
+</ul>
+<p>关于算术指数计算，所有版本都有不同的用途。然而，对于几何平均数而言，只有第三种方法需要考虑。</p>
+<p>如果引入了加权或数量的概念，这提供了一种更准确的方法来确定序列中各项的相对重要性。然而，问题仍然是应该使用基期数量还是当前期数量或权重？两者都可以使用，但重要的是在整个计算过程中使用相同的权重。两者产生不同类型的指数，并有各自的优缺点。</p>
+<h3 id="_9">拉斯佩尔指数</h3>
+<p>拉斯佩尔指数是一个基期数量加权指数（所有价格都根据基期数量加权）。该指数的计算公式为：<br />
+<script type="math/tex; mode=display">
+\text{拉斯佩尔指数} = \frac{\sum P_n Q_0}{\sum P_0 Q_0} \times \text{基准指数值}
+</script>
+其中：
+- <script type="math/tex"> P_n </script> = 当前期价格<br />
+- <script type="math/tex"> Q_0 </script> = 基期数量或权重<br />
+- <script type="math/tex"> P_0 </script> = 基期价格  </p>
+<p>此指数表示以当前价格购买基期数量的成本与基期成本的比较。以下示例展示了使用拉斯佩尔指数计算食品价格通胀率的应用（假设基准指数为100）。  </p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基期价格 <script type="math/tex"> P_0 </script> (£)</th>
+<th>基期数量 <script type="math/tex"> Q_0 </script>
+</th>
+<th>当前价格 <script type="math/tex"> P_n </script> (£)</th>
+<th>当前数量 <script type="math/tex"> Q_n </script>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>1.00</td>
+<td>20</td>
+<td>4.00</td>
+<td>5</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1.15</td>
+<td>18</td>
+<td>2.20</td>
+<td>15</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1.30</td>
+<td>12</td>
+<td>2.15</td>
+<td>18</td>
+</tr>
+<tr>
+<td>D</td>
+<td>2.00</td>
+<td>15</td>
+<td>2.05</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<p>拉斯佩尔指数计算如下：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>
+<script type="math/tex"> P_n Q_0 </script> (£)</th>
+<th>
+<script type="math/tex"> P_0 Q_0 </script> (£)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>80.00</td>
+<td>20.00</td>
+</tr>
+<tr>
+<td>B</td>
+<td>39.60</td>
+<td>20.70</td>
+</tr>
+<tr>
+<td>C</td>
+<td>25.80</td>
+<td>15.60</td>
+</tr>
+<tr>
+<td>D</td>
+<td>30.80</td>
+<td>30.00</td>
+</tr>
+</tbody>
+</table>
+<p>
+<script type="math/tex; mode=display">
+176.2 + 86.30 = 262.5
+</script>
+<script type="math/tex; mode=display">
+\frac{262.5}{86.30} \times 100 = 204.17
+</script>
+</p>
+<p>此指数衡量了原始购物篮价格的变化。如果此指数应用于投资组合计算，它将显示原始投资组合的价值变化。</p>
+<h3 id="_10">帕谢指数</h3>
+<p>帕谢价格指数是一个当前期数量加权指数（所有价格根据当前数量加权）。该指数的计算公式为：<br />
+<script type="math/tex; mode=display">
+\text{帕谢指数} = \frac{\sum P_n Q_n}{\sum P_0 Q_n} \times \text{基准指数值}
+</script>
+其中：
+- <script type="math/tex"> P_n </script> = 当前期价格<br />
+- <script type="math/tex"> Q_n </script> = 当前期数量或权重<br />
+- <script type="math/tex"> P_0 </script> = 基期价格  </p>
+<p>此类型的指数衡量当前期成本与购买当前期数量的成本的关系。基于上述数据，可以计算帕谢指数：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>
+<script type="math/tex"> P_n Q_n </script> (£)</th>
+<th>
+<script type="math/tex"> P_0 Q_n </script> (£)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>20.00</td>
+<td>8.00</td>
+</tr>
+<tr>
+<td>B</td>
+<td>33.00</td>
+<td>17.25</td>
+</tr>
+<tr>
+<td>C</td>
+<td>38.70</td>
+<td>23.40</td>
+</tr>
+<tr>
+<td>D</td>
+<td>41.00</td>
+<td>40.00</td>
+</tr>
+</tbody>
+</table>
+<p>
+<script type="math/tex; mode=display">
+132.70 + 88.65 = 221.35
+</script>
+<script type="math/tex; mode=display">
+\frac{221.35}{88.65} \times 100 = 149.70
+</script>
+</p>
+<p>此指数衡量了当前购物篮的价格变化。如果查看投资组合，它将衡量当前投资组合的价值变化。</p>
+<h3 id="_11">拉斯佩尔指数与帕谢指数的比较</h3>
+<p>虽然可以使用任何一个指数，但它们各自都有优缺点。  </p>
+<p>拉斯佩尔指数的优点包括：
+- 权重来自基期数据，因此每次制作新指数时，只需收集新价格数据。
+- 拉斯佩尔指数每次需要的重新计算较少，因为分母保持不变。
+- 由于分母保持不变，拉斯佩尔指数更容易进行年度比较。而帕谢指数只能与基期进行比较，因为每个指数的权重都不同。</p>
+<p>帕谢指数的优点包括：
+- 帕谢指数被认为能够更真实地反映当前的消费模式，因为它使用了当前期的权重。此外，某些情况下，数量或权重每年变化较大，使用基期数量的方式不再现实，而帕谢指数适用于这种情况。</p>
+<p>有来源表示，拉斯佩尔指数比帕谢指数更为常见。然而，由于拉斯佩尔指数基于原始数量或权重，且没有考虑到转向快速上涨的项目，可能会低估投资组合表现。另一方面，帕谢指数可能会高估投资组合表现，因为它的加权偏向于那些价格涨幅最小的项目。</p>
+<p>FT All Share指数是一个市值加权指数的例子。</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Copyright 2024 MoneyWaffle.com. All rights reserved. Please <a href="mailto:support@moneywaffle.com">contact us</a> for more information.</small><br>
+            
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../../.."</script>
+    
+    <script src="../../../js/base.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../scripts/default.js"></script>
+    <script src="../../../scripts/load_scripts.js"></script>
+    <script src="../../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
