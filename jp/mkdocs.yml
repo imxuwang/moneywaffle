@@ -11,6 +11,7 @@ plugins:
 nav:
   - Home: index.md
   - 週刊: 'weekly/content.md'
+  - 歴史: 'history/content.md'
   # - 经济: 'economy/content.md'
   # - 金融:
   #   - 金融市场指南: finance/金融市场指南/目录.md
